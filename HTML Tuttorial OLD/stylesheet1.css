@@ -1,0 +1,27 @@
+body {
+	background-color: lightblue;
+}
+
+h1 {
+	color: blue;
+	font-family: verdana;
+	font-size: 200%;
+	border: 1px solid blue;
+	padding:50px;
+	margin: 20px;
+}
+		
+p {
+	color: red;
+	font-family: courier;
+	font-size: 125%;
+	/*border: 1px solid blue;*/
+}
+
+#h01{
+    color: green;
+}
+
+#p01{
+    color: grey;
+}

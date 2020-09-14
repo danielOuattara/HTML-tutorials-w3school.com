@@ -1,0 +1,62 @@
+a:link  {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited  {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover  {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active  {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+#a01:link  {
+     color: blue;
+     background-color: transparent;
+     text-decoration: none;
+}
+
+#a01:visited  {
+     color: green;
+     background-color: transparent;
+     text-decoration: none;
+}
+
+#a01:hover  {
+     color: grey;
+     background-color: transparent;
+     text-decoration: underline;
+}
+
+#a01:active  {
+     color: blue;
+     background-color: transparent;
+     text-decoration: underline;
+}
+
+
+#a02:link, #a02:visited   {
+     background-color: royalblue;
+     color: white;
+     padding: 10px 15px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+}
+
+#a02:hover, #a02:active  {
+     background-color: dodgerblue;
+}

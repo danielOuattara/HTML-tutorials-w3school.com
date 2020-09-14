@@ -1,0 +1,591 @@
+<!---------------------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+12 03 2020
+HTML Tutorial from: https://www.w3schools.com/html/
+ --------------------------------------------------->
+
+ <!DOCTYPE html>
+ <html lang="en" dir="ltr">
+     <head>
+         <meta charset="utf-8">
+         <title>HTML Table</title>
+         <style>
+
+             .table01{ width: 100%; margin-bottom: 100px;}
+
+
+             .table02 {width: 100%; margin-bottom:100px;}
+             .table02, .table02 td, .table02 th {border: 1px solid blue; }
+
+             .table03 {width: 100%; margin-bottom:100px;}
+             .table03, .table03 td, .table03 th {border: 1px solid blue;
+                border-collapse: collapse; }
+
+             .table04 {width: 100%; margin-bottom:100px;}
+             .table04, .table04 td, .table04 th {border: 1px solid blue;
+                border-collapse: collapse; }
+             .table04 td, .table04 th { padding: 15px; }
+
+             .table05 {width: 100%; margin-bottom:100px;}
+             .table05, .table05 td, .table05 th {border: 1px solid blue;
+                border-collapse: collapse; }
+             .table05 td, .table05 th { padding: 15px; text-align: center}
+             /*.table05 th { text-align: left; }*/
+
+             .table06 {width: 100%; margin-bottom:100px; border-spacing: 10px;}
+             .table06, .table06 td, .table06 th {border: 1px solid blue; /* border-collapse: collapse; */ }
+             .table06 td, .table06 th { padding: 15px; }
+             .table06 th { text-align: left; }
+
+             .table07 { width: 100%; margin-bottom: 100px; }
+             .table07, .table07 th, .table07 td {border: 1px solid green;
+                border-collapse: collapse; }
+             .table07 th, .table07 td {padding: 15px; }
+
+             .table08 { width: 100%; margin-bottom: 100px; }
+             .table08, .table08 th, .table08 td {border: 1px solid green;
+               border-collapse: collapse; }
+             .table08 th, .table08 td { padding: 15px; }
+
+
+             .table09 { width:100%; margin-bottom: 100px }
+             .table09, .table09 th , .table09 td {border: 1px solid black;
+                 border-collapse: collapse; }
+             .table09 th, .table09 td { padding: 10px; text-align: left; }
+
+
+             .table10 { width: 100% ; margin-bottom: 100px; }
+             .table10, .table10 th, .table10 td {border: 1px solid black;
+               border-collapse: collapse; }
+             .table10 th, .table10 td { padding: 10px; }
+
+
+             .table11 { width: 100% ; margin-bottom: 100px;
+               background-color: lightsalmon; }
+             .table11, .table11 th, .table11 td {border: 1px solid black;
+               border-collapse: collapse; }
+             .table11 th, .table11 td { padding: 10px; }
+
+
+             #table12 { width: 100% ; margin-bottom: 100px;
+                background-color: lightblue; }
+             #table12, #table12 th, #table12 td {border: 1px solid black;
+               border-collapse: collapse; }
+             #table12 th, #table12 td { padding: 10px; }
+
+
+             .table13 { width: 100%; margin-bottom: 100px; }
+             .table13, .table13 th, .table13 td {border: 1px solid black;
+               border-collapse: collapse; }
+             .table13 th, .table13 td { padding: 10px; }
+             .table13 tr:nth-child(even) { background-color: cyan;}
+             .table13 tr:nth-child(odd) { background-color: dodgerblue;}
+             .table13 th {background-color:blue; }
+
+
+             #table14 { width: 100%; margin-bottom: 100px; }
+             #table14, #table14 th, #table14 td {border: 1px solid black;
+               border-collapse: collapse; }
+             #table14 th, #table14 td { padding: 10px; }
+             #table14 tr:nth-child(even) { background-color: darkseagreen; }
+             #table14 tr:nth-child(odd) { background-color: lightblue; }
+             #table14 th {background-color: darkcyan; }.
+
+
+             #table15 { width: 100%; margin-bottom: 100px;}
+             #table15, #table15 th , #table15 td {border: 1px solid black;
+               border-collapse: collapse; }
+             #table15 th, #table15 td { padding: 10px; text-align: left; }
+
+
+             .table16 { width:100%; margin-bottom: 100px; }
+             .table16, .table16 th , .table16 td {border: 1px solid black;
+               border-collapse: collapse; }
+             .table16 th, .table16 td { padding: 10px; text-align: left; }
+             .table16 thead {color: green; }
+             .table16 tbody {color: blue; }
+             .table16 tfoot {color: red; }
+
+         </style>
+     </head>
+     <body>
+         <h1>HTML Table</h1>
+
+<!-- Chapter Summary
+=======================
+
+> Use the HTML '<table>' element to define a table
+> Use the HTML '<tr>' element to define a table row
+> Use the HTML '<td>' element to define a table data
+> Use the HTML '<th>' element to define a table heading
+> Use the HTML '<caption>' element to define a table caption
+> Use the CSS 'border' property to define a border
+> Use the CSS 'border-collapse' property to collapse cell borders
+> Use the CSS 'padding' property to add padding to cells
+> Use the CSS 'text-align' property to align cell text
+> Use the CSS 'border-spacing' property to set the spacing between cells
+> Use the 'colspan' attribute to make a cell span many columns
+> Use the 'rowspan' attribute to make a cell span many rows
+> Use the 'id' attribute to uniquely define one table
+
+
+HTML Table Tags
+==================
+Tag          Description
+--------     -------------
+<table>      Defines a table
+<th>         Defines a header cell in a table
+<tr>         Defines a row in a table
+<td>         Defines a cell in a table
+<caption>    Defines a table caption
+<colgroup>   Specifies a group of one or more columns in a table for formatting
+<col>        Specifies column properties for each column within a <colgroup> element
+<thead>      Groups the header content in a table
+<tbody>      Groups the body content in a table
+<tfoot>      Groups the footer content in a table
+
+
+  Defining an HTML table
+=========================                                                    -->
+
+         <table class="table01">
+            <caption>table 01</caption>
+             <tr>
+                 <th>FirstName</th>
+                 <th>LastName</th>
+                 <th>Age</th>
+             </tr>
+
+             <tr>
+                 <td>Jill</td>
+                 <td>Smith</td>
+                 <td>50</td>
+             </tr>
+
+             <tr>
+                 <td>Eve</td>
+                 <td>Jackson</td>
+                 <td>59</td>
+             </tr>
+         </table>
+
+
+         <!-- HTML Table - Adding a Border -->
+         <table class="table02">
+            <caption>table 02</caption>
+             <tr>
+                 <th>FirstName</th>
+                 <th>LastName</th>
+                 <th>Age</th>
+             </tr>
+
+             <tr>
+                 <td>Jill</td>
+                 <td>Smith</td>
+                 <td>50</td>
+             </tr>
+
+             <tr>
+                 <td>Eve</td>
+                 <td>Jackson</td>
+                 <td>59</td>
+             </tr>
+         </table>
+
+
+         <!-- HTML Table - Collapsed Borders -->
+         <table class="table03">
+            <caption>table 03</caption>
+             <tr>
+                 <th>FirstName</th>
+                 <th>LastName</th>
+                 <th>Age</th>
+             </tr>
+
+             <tr>
+                 <td>Jill</td>
+                 <td>Smith</td>
+                 <td>50</td>
+             </tr>
+
+             <tr>
+                 <td>Eve</td>
+                 <td>Jackson</td>
+                 <td>59</td>
+             </tr>
+         </table>
+
+
+         <!-- HTML Table - Adding Cell Padding -->
+         <table class="table04">
+             <caption>table 04</caption>
+             <tr>
+                 <th>FirstName</th>
+                 <th>LastName</th>
+                 <th>Age</th>
+             </tr>
+
+             <tr>
+                 <td>Jill</td>
+                 <td>Smith</td>
+                 <td>50</td>
+             </tr>
+
+             <tr>
+                 <td>Eve</td>
+                 <td>Jackson</td>
+                 <td>59</td>
+             </tr>
+         </table>
+
+
+         <!-- HTML Table - Left-align Headings -->
+         <table class="table05">
+            <caption>table 05</caption>
+             <tr>
+                 <th>FirstName</th>
+                 <th>LastName</th>
+                 <th>Age</th>
+             </tr>
+
+             <tr>
+                 <td>Jill</td>
+                 <td>Smith</td>
+                 <td>50</td>
+             </tr>
+
+             <tr>
+                 <td>Eve</td>
+                 <td>Jackson</td>
+                 <td>59</td>
+             </tr>
+         </table>
+
+         <!-- HTML Table - Adding Border Spacing -->
+         <table class="table06">
+            <caption>table 06</caption>
+             <tr>
+                 <th>FirstName</th>
+                 <th>LastName</th>
+                 <th>Age</th>
+             </tr>
+
+             <tr>
+                 <td>Jill</td>
+                 <td>Smith</td>
+                 <td>50</td>
+             </tr>
+
+             <tr>
+                 <td>Eve</td>
+                 <td>Jackson</td>
+                 <td>59</td>
+             </tr>
+         </table>
+
+         <!-- HTML Table - Cells that Span Many Columns -->
+         <table class="table07">
+            <caption>table 07</caption>
+             <tr>
+                 <th>Name</th>
+                 <th colspan="2">Phone contacts</th>
+             </tr>
+             <tr>
+                 <td>Bill Gates</td>
+                 <td>555-345-789-32</td>
+                 <td>554-213-786-43</td>
+             </tr>
+             <tr>
+                 <td>Danny Boy</td>
+                 <td>+336-239-117-40</td>
+                 <td>+336-873-355-87</td>
+             </tr>
+
+         </table>
+
+         <!-- HTML Table - Cells that Span Many Rows -->
+         <table class="table08">
+            <caption>table 08</caption>
+             <tr>
+                 <th>Name</th>
+                 <td>Bill Gates</td>
+                 <td>Danny Boy</td>
+                 <td>Lucky Luke</td>
+             </tr>
+             <tr>
+                 <th rowspan="2">phone contacts</th>
+                 <td>555-345-789-32</td>
+                 <td>+336-239-117-40</td>
+                 <td>+1-345-239-40</td>
+             </tr>
+             <tr>
+                 <td>554-213-786-43</td>
+                 <td>+336-873-355-87</td>
+                 <td>+1-005-007-37</td>
+             </tr>
+         </table>
+
+         <!-- HTML Table - Adding a Caption -->
+         <table class="table09">
+            <caption>table 09</caption>
+             <caption>Monthly Savings</caption>
+             <tr>
+                 <th>Months</th>
+                 <th>Savings</th>
+             </tr>
+             <tr>
+                 <td>January</td>
+                 <td>$60</td>
+             </tr>
+             <tr>
+                 <td>February</td>
+                 <td>$50</td>
+             </tr>
+
+         </table>
+
+         <!--A Special Style for One Table -->
+         <table class="table10">
+            <caption>table 10</caption>
+             <tr>
+                 <th>FirstName</th>
+                 <th>LastName</th>
+                 <th>Age</th>
+             </tr>
+             <tr>
+                 <td style= "text-align: center;">Eve</td>
+                 <td>Jackson</td>
+                 <td>47</td>
+             </tr>
+             <tr>
+                 <td>Mel</td>
+                 <td>Gibson</td>
+                 <td>64</td>
+             </tr>
+             <tr>
+                 <td>Denzel</td>
+                 <td>Whashington</td>
+                 <td>65</td>
+             </tr>
+             <tr>
+                 <td>Danny</td>
+                 <td>Boy</td>
+                 <td>37</td>
+             </tr>
+         </table>
+
+
+         <table class="table11">
+            <caption>table 11</caption>
+             <tr>
+                 <th>FirstName</th>
+                 <th>LastName</th>
+                 <th>Age</th>
+             </tr>
+             <tr>
+                 <td>Eve</td>
+                 <td>Jackson</td>
+                 <td>47</td>
+             </tr>
+             <tr>
+                 <td>Mel</td>
+                 <td>Gibson</td>
+                 <td>64</td>
+             </tr>
+             <tr>
+                 <td>Denzel</td>
+                 <td>Whashington</td>
+                 <td>65</td>
+             </tr>
+             <tr>
+                 <td>Danny</td>
+                 <td>Boy</td>
+                 <td>37</td>
+             </tr>
+         </table>
+
+
+         <table id="table12">
+             <caption>table 12</caption>
+             <tr>
+                 <th>FirstName</th>
+                 <th>LastName</th>
+                 <th>Age</th>
+             </tr>
+             <tr>
+                 <td>Eve</td>
+                 <td>Jackson</td>
+                 <td>47</td>
+             </tr>
+             <tr>
+                 <td>Mel</td>
+                 <td>Gibson</td>
+                 <td>64</td>
+             </tr>
+             <tr>
+                 <td>Denzel</td>
+                 <td>Whashington</td>
+                 <td>65</td>
+             </tr>
+             <tr>
+                 <td>Danny</td>
+                 <td>Boy</td>
+                 <td>37</td>
+             </tr>
+         </table>
+
+
+         <table class="table13">
+            <caption>table 13</caption>
+             <tr>
+                 <th>FirstName</th>
+                 <th>LastName</th>
+                 <th>Age</th>
+             </tr>
+             <tr>
+                 <td>Eve</td>
+                 <td>Jackson</td>
+                 <td>47</td>
+             </tr>
+             <tr>
+                 <td>Mel</td>
+                 <td>Gibson</td>
+                 <td>64</td>
+             </tr>
+             <tr>
+                 <td>Denzel</td>
+                 <td>Whashington</td>
+                 <td>65</td>
+             </tr>
+             <tr>
+                 <td>Danny</td>
+                 <td>Boy</td>
+                 <td>37</td>
+             </tr>
+         </table>
+
+
+         <table id="table14">
+            <caption>table 14</caption>
+             <tr>
+                 <th>FirstName</th>
+                 <th>LastName</th>
+                 <th>Age</th>
+             </tr>
+             <tr>
+                 <td>Eve</td>
+                 <td>Jackson</td>
+                 <td>47</td>
+             </tr>
+             <tr>
+                 <td>Mel</td>
+                 <td>Gibson</td>
+                 <td>64</td>
+             </tr>
+             <tr>
+                 <td>Denzel</td>
+                 <td>Whashington</td>
+                 <td>65</td>
+             </tr>
+             <tr>
+                 <td>Danny</td>
+                 <td>Boy</td>
+                 <td>37</td>
+             </tr>
+         </table>
+
+         <!-- HTML <colgroup> Tag -->
+
+         <table id="table15">
+             <caption>table 15: colgroup element usage</caption>
+             <colgroup>
+                 <col span="1" style= "background-color: lightgreen; "/>
+                 <col span="2" style= "background-color: lightblue; "/>
+                 <col span="1" style= "background-color: lightpink;
+                    text-align: center; "/>
+                 <col span="1" style= "background-color: orange; "/>
+             </colgroup>
+             <tr>
+                 <th>ISBN</th>
+                 <th>Title</th>
+                 <th>Author</th>
+                 <th>Number of Pages</th>
+                 <th>Price</th>
+             </tr>
+             <tr>
+                 <td>3457765-543</td>
+                 <td>First HTML </td>
+                 <td>Hill Mary</td>
+                 <td>245</td>
+                 <td>$45</td>
+             </tr>
+
+             <tr>
+                 <td>1211134-543</td>
+                 <td>python Course</td>
+                 <td>Jey Mary</td>
+                 <td>345</td>
+                 <td>$70</td>
+             </tr>
+             <tr>
+                 <td>3211004-543</td>
+                 <td>Java Programming</td>
+                 <td>Blue Tedd </td>
+                 <td>345</td>
+                 <td>$90</td>
+             </tr>
+         </table>
+
+         <!--  Table head, body , foot -->
+
+         <table class="table16">
+             <caption> table 16: thead, tbody, tfoot</caption>
+             <colgroup>
+                 <col span="1" style= "background-color: lightgreen; "/>
+                 <col span="2" style= "background-color: lightblue; "/>
+                 <col span="1" style= "background-color: lightpink;
+                      text-align: center; "/>
+                 <col span="1" style= "background-color: orange; "/>
+             </colgroup>
+             <thead>
+               <tr>
+                 <th>ISBN</th>
+                 <th>Title</th>
+                 <th>Author</th>
+                 <th>Number of Pages</th>
+                 <th>Price</th>
+               </tr>
+             </thead>
+             <tbody>
+             <tr>
+                 <td>3457765-543</td>
+                 <td>First HTML </td>
+                 <td>Hill Mary</td>
+                 <td>245</td>
+                 <td>$45</td>
+             </tr>
+
+             <tr>
+                 <td>1211134-543</td>
+                 <td>python Course</td>
+                 <td>Jey Mary</td>
+                 <td>345</td>
+                 <td>$70</td>
+             </tr>
+             <tr>
+                 <td>3211004-543</td>
+                 <td>Java Programming</td>
+                 <td>Blue Tedd </td>
+                 <td>345</td>
+                 <td>$90</td>
+              </tr>
+           </tbody>
+           <tfoot>
+               <tr>
+                   <td></td>
+                   <td>4 books</td>
+                   <td>4 authors</td>
+                   <td>Total 935 pages</td>
+                   <td>Full Price $205</td>
+               </tr>
+           </tfoot> </table> </body> </html>

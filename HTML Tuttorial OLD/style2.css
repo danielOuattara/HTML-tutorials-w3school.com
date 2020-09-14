@@ -1,0 +1,36 @@
+body  {
+  background-color: powderblue;
+
+}
+
+h1  {
+  color: blue;
+  padding: 20px;
+  margin: 30px;
+  border: 2px solid red;
+  font-family: verdana
+}
+
+h2  {
+  color: orange;
+  padding: 20px;
+  margin: 30px;
+  border: 2px solid green;
+  font-family: courier;
+}
+
+p  {
+  color: green;
+  padding: 20px;
+  margin: 30px;
+  border: 2px solid green;
+}
+#p01  {
+  color: grey;
+  padding: 20px;
+  margin: 30px;
+  border: hidden;
+}
+p.red  {
+  color: red;
+}

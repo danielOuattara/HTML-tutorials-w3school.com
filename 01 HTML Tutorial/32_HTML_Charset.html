@@ -1,0 +1,339 @@
+<!-------------------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+03 03 2020
+HTML Tutorial from: https://www.w3schools.com/html/
+--------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>H TML Encoding - Character Sets</title>
+  </head>
+  <body>
+    <h1>HTML Encoding (Character Sets)</h1>
+
+<!-- To display an HTML page correctly, a web browser must know which
+character set to use.
+
+
+What is Character Encoding ?
+============================
+
+> ASCII was the first character encoding standard (also called character set).
+  It defined 128 different alphanumeric characters that could be used on
+  the internet: numbers (0-9), English letters (A-Z), and some special
+  characters like ! $ + - ( ) @ < > .
+
+> ISO-8859-1 was the default character set for HTML 4. This character set
+  supported 256 different character codes.
+
+> ANSI (Windows-1252) was the original Windows character set. ANSI is
+  identical to ISO-8859-1, except that ANSI has 32 extra characters.
+
+Because ISO-8859-1 and ANSI were so limited, HTML 4 also supported UTF-8.
+
+NOTE: UTF-8 (Unicode) covers almost all of the characters and symbols .
+----  in the world.
+
+The default character set for HTML5 is UTF-8.
+
+
+The HTML charset Attribute
+===========================
+
+To display an HTML page correctly, a web browser must know the character
+set used in the page.
+
+This is specified in the <meta> tag:
+
+<meta charset="UTF-8">
+
+If a browser detects ISO-8859-1 in a web page, it defaults to ANSI.
+
+
+Differences Between Character Sets
+====================================
+
+The following table displays the differences between the character sets
+described above:
+
+Numb 	ASCII ANSI 	8859 	UTF-8 Description
+32					                  space
+33    d!    d!    d!    d!    dexclamation mark
+34    d"    d"    d"    d"    dquotation mark
+35    d#    d#    d#    d#    dnumber sign
+36    d$    d$    d$    d$    ddollar sign
+37    d%    d%    d%    d%    dpercent sign
+38    d&    d&    d&    d&    dampersand
+39    d'    d'    d'    d'    dapostrophe
+40    d(    d(    d(    d(    dleft parenthesis
+41    d)    d)    d)    d)    dright parenthesis
+42    d*    d*    d*    d*    dasterisk
+43    d+    d+    d+    d+    dplus sign
+44    d,    d,    d,    d,    dcomma
+45    d-    d-    d-    d-    dhyphen-minus
+46    d.    d.    d.    d.    dfull stop
+47    d/    d/    d/    d/    dsolidus
+48    d0    d0    d0    d0    ddigit zero
+49    d1    d1    d1    d1    ddigit one
+50    d2    d2    d2    d2    ddigit two
+51    d3    d3    d3    d3    ddigit three
+52    d4    d4    d4    d4    ddigit four
+53    d5    d5    d5    d5    ddigit five
+54    d6    d6    d6    d6    ddigit six
+55    d7    d7    d7    d7    ddigit seven
+56    d8    d8    d8    d8    ddigit eight
+57    d9    d9    d9    d9    ddigit nine
+58    d:    d:    d:    d:    dcolon
+59    d;    d;    d;    d;    dsemicolon
+60    d<    d<    d<    d<    dless-than sign
+61    d=    d=    d=    d=    dequals sign
+62    d>    d>    d>    d>    dgreater-than sign
+63    d?    d?    d?    d?    dquestion mark
+64    d@    d@    d@    d@    dcommercial at
+65    dA    dA    dA    dA    dLatin capital letter A
+66    dB    dB    dB    dB    dLatin capital letter B
+67    dC    dC    dC    dC    dLatin capital letter C
+68    dD    dD    dD    dD    dLatin capital letter D
+69    dE    dE    dE    dE    dLatin capital letter E
+70    dF    dF    dF    dF    dLatin capital letter F
+71    dG    dG    dG    dG    dLatin capital letter G
+72    dH    dH    dH    dH    dLatin capital letter H
+73    dI    dI    dI    dI    dLatin capital letter I
+74    dJ    dJ    dJ    dJ    dLatin capital letter J
+75    dK    dK    dK    dK    dLatin capital letter K
+76    dL    dL    dL    dL    dLatin capital letter L
+77    dM    dM    dM    dM    dLatin capital letter M
+78    dN    dN    dN    dN    dLatin capital letter N
+79    dO    dO    dO    dO    dLatin capital letter O
+80    dP    dP    dP    dP    dLatin capital letter P
+81    dQ    dQ    dQ    dQ    dLatin capital letter Q
+82    dR    dR    dR    dR    dLatin capital letter R
+83    dS    dS    dS    dS    dLatin capital letter S
+84    dT    dT    dT    dT    dLatin capital letter T
+85    dU    dU    dU    dU    dLatin capital letter U
+86    dV    dV    dV    dV    dLatin capital letter V
+87    dW    dW    dW    dW    dLatin capital letter W
+88    dX    dX    dX    dX    dLatin capital letter X
+89    dY    dY    dY    dY    dLatin capital letter Y
+90    dZ    dZ    dZ    dZ    dLatin capital letter Z
+91    d[    d[    d[    d[    dleft square bracket
+92    d\    d\    d\    d\    dreverse solidus
+93    d]    d]    d]    d]    dright square bracket
+94    d^    d^    d^    d^    dcircumflex accent
+95    d_    d_    d_    d_    dlow line
+96    d`    d`    d`    d`    dgrave accent
+97    da    da    da    da    dLatin small letter a
+98    db    db    db    db    dLatin small letter b
+99    dc    dc    dc    dc    dLatin small letter c
+100    dd    dd    dd    dd    dLatin small letter d
+101    de    de    de    de    dLatin small letter e
+102    df    df    df    df    dLatin small letter f
+103    dg    dg    dg    dg    dLatin small letter g
+104    dh    dh    dh    dh    dLatin small letter h
+105    di    di    di    di    dLatin small letter i
+106    dj    dj    dj    dj    dLatin small letter j
+107    dk    dk    dk    dk    dLatin small letter k
+108    dl    dl    dl    dl    dLatin small letter l
+109    dm    dm    dm    dm    dLatin small letter m
+110    dn    dn    dn    dn    dLatin small letter n
+111    do    do    do    do    dLatin small letter o
+112    dp    dp    dp    dp    dLatin small letter p
+113    dq    dq    dq    dq    dLatin small letter q
+114    dr    dr    dr    dr    dLatin small letter r
+115    ds    ds    ds    ds    dLatin small letter s
+116    dt    dt    dt    dt    dLatin small letter t
+117    du    du    du    du    dLatin small letter u
+118    dv    dv    dv    dv    dLatin small letter v
+119    dw    dw    dw    dw    dLatin small letter w
+120    dx    dx    dx    dx    dLatin small letter x
+121    dy    dy    dy    dy    dLatin small letter y
+122    dz    dz    dz    dz    dLatin small letter z
+123    d{    d{    d{    d{    dleft curly bracket
+124    d|    d|    d|    d|    dvertical line
+125    d}    d}    d}    d}    dright curly bracket
+126    d~    d~    d~    d~    dtilde
+127    dDEL
+128    d     d€    d     d     deuro sign
+129    d     d    d    d    dNOT USED
+130    d     d‚    d     d     dsingle low-9 quotation mark
+131    d     dƒ    d     d     dLatin small letter f with hook
+132    d     d„    d     d     ddouble low-9 quotation mark
+133    d     d…    d     d     dhorizontal ellipsis
+134    d     d†    d     d     ddagger
+135    d     d‡    d     d     ddouble dagger
+136    d     dˆ    d     d     dmodifier letter circumflex accent
+137    d     d‰    d     d     dper mille sign
+138    d     dŠ    d     d     dLatin capital letter S with caron
+139    d     d‹    d     d     dsingle left-pointing angle quotation mark
+140    d     dŒ    d     d     dLatin capital ligature OE
+141    d     d    d    d    dNOT USED
+142    d     dŽ    d     d     dLatin capital letter Z with caron
+143    d     d    d    d    dNOT USED
+144    d     d    d    d    dNOT USED
+145    d     d‘    d     d     dleft single quotation mark
+146    d     d’    d     d     dright single quotation mark
+147    d     d“    d     d     dleft double quotation mark
+148    d     d”    d     d     dright double quotation mark
+149    d     d•    d     d     dbullet
+150    d     d–    d     d     den dash
+151    d     d—    d     d     dem dash
+152    d     d˜    d     d     dsmall tilde
+153    d     d™    d     d     dtrade mark sign
+154    d     dš    d     d     dLatin small letter s with caron
+155    d     d›    d     d     dsingle right-pointing angle quotation mark
+156    d     dœ    d     d     dLatin small ligature oe
+157    d     d    d    d    dNOT USED
+158    d     dž    d     d     dLatin small letter z with caron
+159    d     dŸ    d     d     dLatin capital letter Y with diaeresis
+160    d     d     d     d     dno-break space
+161    d     d¡    d¡    d¡    dinverted exclamation mark
+162    d     d¢    d¢    d¢    dcent sign
+163    d     d£    d£    d£    dpound sign
+164    d     d¤    d¤    d¤    dcurrency sign
+165    d     d¥    d¥    d¥    dyen sign
+166    d     d¦    d¦    d¦    dbroken bar
+167    d     d§    d§    d§    dsection sign
+168    d     d¨    d¨    d¨    ddiaeresis
+169    d     d©    d©    d©    dcopyright sign
+170    d     dª    dª    dª    dfeminine ordinal indicator
+171    d     d«    d«    d«    dleft-pointing double angle quotation mark
+172    d     d¬    d¬    d¬    dnot sign
+173    d     d­    d­    d­    dsoft hyphen
+174    d     d®    d®    d®    dregistered sign
+175    d     d¯    d¯    d¯    dmacron
+176    d     d°    d°    d°    ddegree sign
+177    d     d±    d±    d±    dplus-minus sign
+178    d     d²    d²    d²    dsuperscript two
+179    d     d³    d³    d³    dsuperscript three
+180    d     d´    d´    d´    dacute accent
+181    d     dµ    dµ    dµ    dmicro sign
+182    d     d¶    d¶    d¶    dpilcrow sign
+183    d     d·    d·    d·    dmiddle dot
+184    d     d¸    d¸    d¸    dcedilla
+185    d     d¹    d¹    d¹    dsuperscript one
+186    d     dº    dº    dº    dmasculine ordinal indicator
+187    d     d»    d»    d»    dright-pointing double angle quotation mark
+188    d     d¼    d¼    d¼    dvulgar fraction one quarter
+189    d     d½    d½    d½    dvulgar fraction one half
+190    d     d¾    d¾    d¾    dvulgar fraction three quarters
+191    d     d¿    d¿    d¿    dinverted question mark
+192    d     dÀ    dÀ    dÀ    dLatin capital letter A with grave
+193    d     dÁ    dÁ    dÁ    dLatin capital letter A with acute
+194    d     dÂ    dÂ    dÂ    dLatin capital letter A with circumflex
+195    d     dÃ    dÃ    dÃ    dLatin capital letter A with tilde
+196    d     dÄ    dÄ    dÄ    dLatin capital letter A with diaeresis
+197    d     dÅ    dÅ    dÅ    dLatin capital letter A with ring above
+198    d     dÆ    dÆ    dÆ    dLatin capital letter AE
+199    d     dÇ    dÇ    dÇ    dLatin capital letter C with cedilla
+200    d     dÈ    dÈ    dÈ    dLatin capital letter E with grave
+201    d     dÉ    dÉ    dÉ    dLatin capital letter E with acute
+202    d     dÊ    dÊ    dÊ    dLatin capital letter E with circumflex
+203    d     dË    dË    dË    dLatin capital letter E with diaeresis
+204    d     dÌ    dÌ    dÌ    dLatin capital letter I with grave
+205    d     dÍ    dÍ    dÍ    dLatin capital letter I with acute
+206    d     dÎ    dÎ    dÎ    dLatin capital letter I with circumflex
+207    d     dÏ    dÏ    dÏ    dLatin capital letter I with diaeresis
+208    d     dÐ    dÐ    dÐ    dLatin capital letter Eth
+209    d     dÑ    dÑ    dÑ    dLatin capital letter N with tilde
+210    d     dÒ    dÒ    dÒ    dLatin capital letter O with grave
+211    d     dÓ    dÓ    dÓ    dLatin capital letter O with acute
+212    d     dÔ    dÔ    dÔ    dLatin capital letter O with circumflex
+213    d     dÕ    dÕ    dÕ    dLatin capital letter O with tilde
+214    d     dÖ    dÖ    dÖ    dLatin capital letter O with diaeresis
+215    d     d×    d×    d×    dmultiplication sign
+216    d     dØ    dØ    dØ    dLatin capital letter O with stroke
+217    d     dÙ    dÙ    dÙ    dLatin capital letter U with grave
+218    d     dÚ    dÚ    dÚ    dLatin capital letter U with acute
+219    d     dÛ    dÛ    dÛ    dLatin capital letter U with circumflex
+220    d     dÜ    dÜ    dÜ    dLatin capital letter U with diaeresis
+221    d     dÝ    dÝ    dÝ    dLatin capital letter Y with acute
+222    d     dÞ    dÞ    dÞ    dLatin capital letter Thorn
+223    d     dß    dß    dß    dLatin small letter sharp s
+224    d     dà    dà    dà    dLatin small letter a with grave
+225    d     dá    dá    dá    dLatin small letter a with acute
+226    d     dâ    dâ    dâ    dLatin small letter a with circumflex
+227    d     dã    dã    dã    dLatin small letter a with tilde
+228    d     dä    dä    dä    dLatin small letter a with diaeresis
+229    d     då    då    då    dLatin small letter a with ring above
+230    d     dæ    dæ    dæ    dLatin small letter ae
+231    d     dç    dç    dç    dLatin small letter c with cedilla
+232    d     dè    dè    dè    dLatin small letter e with grave
+233    d     dé    dé    dé    dLatin small letter e with acute
+234    d     dê    dê    dê    dLatin small letter e with circumflex
+235    d     dë    dë    dë    dLatin small letter e with diaeresis
+236    d     dì    dì    dì    dLatin small letter i with grave
+237    d     dí    dí    dí    dLatin small letter i with acute
+238    d     dî    dî    dî    dLatin small letter i with circumflex
+239    d     dï    dï    dï    dLatin small letter i with diaeresis
+240    d     dð    dð    dð    dLatin small letter eth
+241    d     dñ    dñ    dñ    dLatin small letter n with tilde
+242    d     dò    dò    dò    dLatin small letter o with grave
+243    d     dó    dó    dó    dLatin small letter o with acute
+244    d     dô    dô    dô    dLatin small letter o with circumflex
+245    d     dõ    dõ    dõ    dLatin small letter o with tilde
+246    d     dö    dö    dö    dLatin small letter o with diaeresis
+247    d     d÷    d÷    d÷    ddivision sign
+248    d     dø    dø    dø    dLatin small letter o with stroke
+249    d     dù    dù    dù    dLatin small letter u with grave
+250    d     dú    dú    dú    dLatin small letter u with acute
+251    d     dû	û	û	Latin small letter with circumflex
+252	 	ü	ü	ü	Latin small letter u with diaeresis
+253	 	ý	ý	ý	Latin small letter y with acute
+254	 	þ	þ	þ	Latin small letter thorn
+255	 	ÿ	ÿ	ÿ	Latin small letter y with diaeresis
+
+
+The ASCII Character Set
+=========================
+ASCII uses the values from 0 to 31 (and 127) for control characters.
+
+ASCII uses the values from 32 to 126 for letters, digits, and symbols.
+
+ASCII does not use the values from 128 to 255.
+
+
+The ANSI Character Set (Windows-1252)
+========================================
+ANSI is identical to ASCII for the values from 0 to 127.
+
+ANSI has a proprietary set of characters for the values from 128 to 159.
+
+ANSI is identical to UTF-8 for the values from 160 to 255.
+
+
+The ISO-8859-1 Character Set
+=============================
+8859-1 is identical to ASCII for the values from 0 to 127.
+
+8859-1 does not use the values from 128 to 159.
+
+8859-1 is identical to UTF-8 for the values from 160 to 255.
+
+
+The UTF-8 Character Set
+=========================
+UTF-8 is identical to ASCII for the values from 0 to 127.
+
+UTF-8 does not use the values from 128 to 159.
+
+UTF-8 is identical to both ANSI and 8859-1 for the values from 160 to 255.
+
+UTF-8 continues from the value 256 with more than 10 000 different characters.
+
+For a closer look, study our Complete HTML Character Set Reference.
+
+
+The @charset CSS Rule
+======================
+You can use the CSS @charset rule to specify the character encoding used in
+a style sheet:
+
+Set the encoding of the style sheet to Unicode UTF-8:
+@charset "UTF-8";
+
+Read more about the CSS @charset Rule in our CSS Reference.                  -->
+
+  </body>
+</html>

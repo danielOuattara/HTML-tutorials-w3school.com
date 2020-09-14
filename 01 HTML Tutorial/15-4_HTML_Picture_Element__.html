@@ -1,0 +1,24 @@
+<!--
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+12 03 2020
+HTML Tutorial from: https://www.w3schools.com/html/
+ -->
+ <!DOCTYPE html>
+ <html lang="en" dir="ltr">
+     <head>
+         <meta charset="utf-8">
+         <title>HTML Picture Element</title>
+
+     </head>
+     <body>
+         <h1>HTML Picture Element</h1>
+
+         <p>The picture element allows us to display different
+            pictures for different devices or screen sizes.</p>
+            <picture>
+                <source media="(min-width: 800px)" srcset="../images/image_food.jpg"/>
+                <source media="(min-width: 665px)" srcset="../images/image_car.jpg"/>
+                <img src="../images/image_girl.jpg" alt=""/>
+            </picture>
+     </body>
+ </html>

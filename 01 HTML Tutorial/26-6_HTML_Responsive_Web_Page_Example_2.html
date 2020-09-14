@@ -1,0 +1,110 @@
+<!-------------------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+20 03 2020
+HTML Tutorial from: https://www.w3schools.com/html/
+--------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Responsive Web Page - Example 2</title>
+        <style>
+            * {box-sizing: border-box; }
+            body {font-family: "Verdana"; margin: 0px; padding: 0px;}  /* */
+            .one { background-color: #f1f1f1; padding: 15px;}
+            .two {overflow: auto;}
+            .menu_left { float: left; width:20% ; }
+            .menuitem {
+                padding: 8px;
+                margin-top: 7px;
+                border-bottom: 1px solid #d3d3d3;
+            }
+            .menuitem:hover {
+                background-color:#808080;
+                color: white;
+            }
+
+            .page_purpose {
+                background-color: #f1f1f1;
+                text-align: center;
+                padding: 10px;
+                margin-top: 7px;
+                font-size: 12px; }
+
+            .main_content {
+                float: left;
+                width: 60%;
+                padding: 0 20px;
+                overflow: hidden ; }
+
+            .right_answers {
+                background-color: lightblue;
+                float: left;
+                width: 20%;
+                padding: 10px 15px;
+                margin-top: 7px; }
+
+            @media only screen and (max-width: 800px) {
+                /* For Tablets: */
+                .main_content {width: 80%; padding: 0;}
+                .right_answers {width: 100%; }
+            }
+
+            @media only screen an (max-width: 500px) {
+                /* For mobile phones: */
+                .menu_left, .main_content, .right_answers {
+                    width: 100%; }
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <!-- A responsive web page should look good on
+        large desktop screens and on small mobile phones -->
+
+        <h1>HTML Responsive Web Page - Example 2</h1>
+
+        <div class="one">
+            <h2>Cinque Terre</h2>
+            <h4>Resize the browser window</h4>
+        </div>
+
+        <div class="two">
+            <div class="menu_left">
+                <div class="menuitem">The Walk</div>
+                <div class="menuitem">Transport</div>
+                <div class="menuitem">History</div>
+                <div class="menuitem">Gallery</div>
+            </div>
+
+            <div class="main_content">
+                <h2>The Walk</h2>
+                <p>The walk from Monterosso to Riomaggiore will take you
+                   approximately two hours, give or take an hour depending
+                   on the weather conditions and your physical shape</p>
+                <img src="../images/img_5terre.jpg" alt="Cinq Terre view from heliscopter"
+                     style="max-width:100%;"/>
+            </div>
+
+            <div class="right_answers">
+                <h2>What ?</h2>
+                <p>Cinque Terre comprises five villages: Monterosso,
+                   Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+                <h2>Where ?</h2>
+                <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
+                <h2>Price ?</h2>
+                <p>The walk is free</p>
+            </div>
+        </div>
+
+        <div class="page_purpose">
+             This web page is a part of a demonstration of fluid web design
+              made by w3schools.com. Resize the browser window to see
+              the content respond to the resizing.
+        </div>
+
+    </body>
+</html>

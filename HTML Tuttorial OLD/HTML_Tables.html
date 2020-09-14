@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> HTML Table</title>
+    <style>
+      table#table01 {}
+      table#table01 th {}
+      table#table01 td {}
+
+      table#table02 {width:100%;}
+      table#table02 th{}
+      table#table02 td {}
+
+      table#table03 {width:100%; border:1px solid black;}
+      table#table03 th {}
+      table#table03 td {}
+
+      table#table04 {width:100%; border:1px solid black;}
+      table#table04 th {border:1px solid black;}
+      table#table04 td {}
+
+      table#table05 {width:100%; border:1px solid black;}
+      table#table05 th {border:1px solid black;}
+      table#table05 td {border:1px solid black;}
+
+      table#table06 {width:100%; border:1px solid black; border-collapse: collapse;}
+      table#table06 th {border:1px solid black;}
+      table#table06 td {border:1px solid black;}
+
+      table#table07 {width:100%; border:1px solid black; border-collapse: collapse;}
+      table#table07 th {border:1px solid black; padding: 15px; }
+      table#table07 td {border:1px solid black; padding:10px; }
+
+      table#table08 {width:100%; border:1px solid black; border-collapse: collapse;}
+      table#table08 th {border:1px solid black; padding: 10px;}
+      table#table08 td {border:1px solid black; padding: 10px;}
+
+      table#table09 {width:100%; border:1px solid black; border-collapse: collapse;}
+      table#table09 th {border:1px solid black; border-collapse: collapse; padding: 10px; text-align;left;}
+      table#table09 td {border:1px solid black; border-collapse: collapse; padding: 10px;}
+
+      table#table10 {width:100%; border:1px solid black; border-spacing: 15px;}
+      table#table10 th {border:1px solid black; padding: 5px; text-align;left;}
+      table#table10 td {border:1px solid black; padding: 5px;}
+
+      table#table11 {width:100%; border:1px solid black; border-collapse:collapse;}
+      table#table11 th {border:1px solid black; padding: 5px; text-align:left;}
+      table#table11 td {border:1px solid black; padding: 5px;}
+
+      table#table12 {width:100%; border:1px solid black; border-collapse:collapse;}
+      table#table12 th {border:1px solid black; padding: 5px; text-align:left;}
+      table#table12td {border:1px solid black; padding: 5px;}
+
+      table#table13 {width:30%; border:1px solid black; border-collapse:collapse;}
+      table#table13 th {border:1px solid black; padding: 5px; text-align:center;}
+      table#table13 td {border:1px solid black; padding: 5px; text-align:center;}
+
+      table#table14 {width:100%; border:1px solid black; border-collapse: collapse; background-color: lightblue;}
+      table#table14 th {border:1px solid black;padding: 10px;}
+      table#table14 td {border:1px solid black;}
+
+      table#table15 {width:100%; border:1px solid black; border-collapse: collapse;}
+      table#table15 th {border:1px solid black;padding: 10px; background-color: lightblue;}
+      table#table15 td {border:1px solid black;}
+
+      table#table16 {width:100%; border:1px solid black; border-collapse: collapse;}
+      table#table16 th #th16 {border:1px solid black;padding: 10px;}
+      table#table16 td #td16 {border:1px solid black; background-color: lightblue;}
+
+      table#table17 {width:80%; border:1px solid black; border-collapse: collapse;}
+      table#table17 th {border:1px solid black;padding: 10px;background-color: lightgrey; }
+      table#table17 td {border:1px solid black; background-color: #f1f1c1;}
+
+      table#table18 tr:nth-child(even) {width:100%; border:1px solid black; background-color: #eee;} 
+      table#table18 tr:nth-child(odd) {width:100%; border:1px solid black; background-color: #f1f1c1;}
+      table#table18 th {border:2px solid black;padding: 10px; background-color: lightblue; text-align:left; border-collapse: collapse;}
+      table#table18 td {border:2px solid black;padding: 5px; text-align:center; border-collapse: collapse; }
+
+    </style>
+  </head>
+
+  <body>
+    <h2> HTML Table</h2>
+
+    <h3>Basic HTML Table</h3>
+    <h4><u>Table 01: Defining an HTML Table</u> </h4>
+
+    <table id="table01">
+      <tr>
+        <th> First Name</th>
+        <th> Last Name</th>
+        <th>City</th>
+      </tr>
+      <tr>
+        <td> John</td>
+        <td> Dee</td>
+        <td> Gao</td>
+      </tr>
+      <tr>
+        <td> Ela </td>
+        <td>Smith</td>
+        <td> Alger</td>
+      </tr>
+      <tr>
+        <td>Mac</td>
+        <td>Do</td>
+        <td> Ici</td>
+      </tr>
+    </table><br/>
+
+    <!----------------------------------------->
+      <h4><u>Table 02</u> </h4>
+
+      <p></p>
+    <table id="table02">
+      <tr>
+        <th> First Name</th>
+        <th> Last Name</th>
+        <th>City</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Dee</td>
+        <td>Gao</td>
+      </tr>
+      <tr>
+        <td>Ela</td>
+        <td>Smith</td>
+        <td>Alger</td>
+      </tr>
+      <tr>
+        <td>Mac</td>
+        <td>Do</td>
+        <td> Ici</td>
+      </tr>
+    </table><br/>
+
+    <!----------------------------------------->
+      <h4><u>Table 03: HTML Table - Adding a Border.</u> </h4>
+
+    <table id="table03">
+      <tr>
+        <th> First Name</th>
+        <th> Last Name</th>
+        <th>City</th>
+      </tr>
+      <tr>
+        <td> John</td>
+        <td> Dee</td>
+        <td> Gao</td>
+      </tr>
+      <tr>
+        <td> Ela </td>
+        <td>Smith</td>
+        <td> Alger</td>
+      </tr>
+      <tr>
+        <td>Mac</td>
+        <td>Do</td>
+        <td> Ici</td>
+      </tr>
+    </table><br/>
+
+    <!----------------------------------------->
+      <h4><u>Table 04</u> </h4>
+
+    <table id="table04">
+      <tr>
+        <th> First Name</th>
+        <th> Last Name</th>
+        <th>City</th>
+      </tr>
+      <tr>
+        <td> John</td>
+        <td> Dee</td>
+        <td> Gao</td>
+      </tr>
+      <tr>
+        <td> Ela </td>
+        <td>Smith</td>
+        <td> Alger</td>
+      </tr>
+      <tr>
+        <td>Mac</td>
+        <td>Do</td>
+        <td> Ici</td>
+      </tr>
+    </table><br/>
+
+    <!----------------------------------------->
+      <h4><u>Table 05</u> </h4>
+
+    <table id="table05">
+      <tr>
+        <th> First Name</th>
+        <th> Last Name</th>
+        <th>City</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Dee</td>
+        <td>Gao</td>
+      </tr>
+      <tr>
+        <td> Ela </td>
+        <td>Smith</td>
+        <td> Alger</td>
+      </tr>
+      <tr>
+        <td>Mac</td>
+        <td>Do</td>
+        <td> Ici</td>
+      </tr>
+    </table><br/>
+
+    <!----------------------------------------->
+      <h4><u>Table 06: HTML Table - Collapsed Borders.</u> </h4>
+
+    <table id="table06">
+      <tr>
+        <th> First Name</th>
+        <th> Last Name</th>
+        <th>City</th>
+      </tr>
+      <tr>
+        <td> John</td>
+        <td> Dee</td>
+        <td> Gao</td>
+      </tr>
+      <tr>
+        <td> Ela </td>
+        <td>Smith</td>
+        <td> Alger</td>
+      </tr>
+      <tr>
+        <td>Mac</td>
+        <td>Do</td>
+        <td> Ici</td>
+      </tr>
+    </table><br/>
+
+    <!----------------------------------------->
+      <h4><u>Table 07: HTML Table - Adding Cell Padding.</u> </h4>
+
+    <table id="table07">
+      <tr>
+        <th> First Name</th>
+        <th> Last Name</th>
+        <th>City</th>
+      </tr>
+      <tr>
+        <td> John</td>
+        <td> Dee</td>
+        <td> Gao</td>
+      </tr>
+      <tr>
+        <td> Ela </td>
+        <td>Smith</td>
+        <td> Alger</td>
+      </tr>
+      <tr>
+        <td>Mac</td>
+        <td>Do</td>
+        <td> Ici</td>
+      </tr>
+    </table><br/>
+
+    <!----------------------------------------->
+      <h4><u>Table 08</u> </h4>
+
+    <table id="table08">
+      <tr>
+        <th> First Name</th>
+        <th> Last Name</th>
+        <th>City</th>
+      </tr>
+      <tr>
+        <td> John</td>
+        <td> Dee</td>
+        <td> Gao</td>
+      </tr>
+      <tr>
+        <td> Ela </td>
+        <td>Smith</td>
+        <td> Alger</td>
+      </tr>
+      <tr>
+        <td>Mac</td>
+        <td>Do</td>
+        <td> Ici</td>
+      </tr>
+    </table><br/>
+
+    <!----------------------------------------->
+      <h4><u>Table 09: HTML Table - Left-align Headings.</u> </h4>
+
+    <table id="table09">
+      <tr>
+        <th> First Name</th>
+        <th> Last Name</th>
+        <th>City</th>
+      </tr>
+      <tr>
+        <td> John</td>
+        <td> Dee</td>
+        <td> Gao</td>
+      </tr>
+      <tr>
+        <td> Ela </td>
+        <td>Smith</td>
+        <td> Alger</td>
+      </tr>
+      <tr>
+        <td>Mac</td>
+        <td>Do</td>
+        <td> Ici</td>
+      </tr>
+    </table><br/>
+
+    <!----------------------------------------->
+      <h4><u>Table 10: HTML Table - Adding Border Spacing</u> </h4>
+
+    <table id="table10">
+      <tr>
+        <th> First Name</th>
+        <th> Last Name</th>
+        <th>City</th>
+      </tr>
+      <tr>
+        <td> John</td>
+        <td> Dee</td>
+        <td> Gao</td>
+      </tr>
+      <tr>
+        <td> Ela </td>
+        <td>Smith</td>
+        <td> Alger</td>
+      </tr>
+      <tr>
+        <td>Mac</td>
+        <td>Do</td>
+        <td> Ici</td>
+      </tr>
+    </table><br/>
+
+    <!----------------------------------------->
+      <h4><u>Table 11: HTML Table - Cells that Span Many Columns.</u> </h4>
+
+    <table id="table11">
+      <tr>
+        <th> Name:</th>
+        <th colspan="2"> Phone Number:</th>
+      </tr>
+      <tr>
+        <td> John Dee</td>
+        <td> 555-002-001</td>
+        <td> 555-100-300</td>
+      </tr>
+
+    </table><br/>
+
+
+        <!----------------------------------------->
+          <h4><u>Table 12: HTML Table - Cells that Span Many Rows.</u> </h4>
+
+        <table id="table12">
+          <tr>
+            <th> Name:</th>
+            <td> John Dee </td>
+          </tr>
+          <tr>
+            <th rowspan="2"> Phone Number:</th>
+            <td id="td12"> 555-002-001</td>
+          </tr>
+          <tr>
+              <td> 555-100-300</td>
+          </tr>
+
+        </table><br/>
+
+
+        <!----------------------------------------->
+          <h4><u>Table 13: HTML Table - Adding a Caption.</u> </h4>
+
+        <table id="table13">
+          <caption> Monthly Savings !</caption>
+          <tr id>
+            <th> Months</th>
+            <th> Savings</th>
+          </tr>
+          <tr>
+            <td> January</td>
+            <td> £200</td>
+            </tr>
+          <tr>
+            <td> Febrary</td>
+            <td>£300</td>
+          </tr>
+          <tr>
+            <td>March</td>
+            <td>£250</td>
+          </tr>
+        </table><br/>
+
+        <!----------------------------------------->
+          <h4><u>Table 14: HTML Table background-color.</u> </h4>
+
+        <table id="table14">
+          <tr>
+            <th> First Name</th>
+            <th> Last Name</th>
+            <th>City</th>
+          </tr>
+          <tr>
+            <td> John</td>
+            <td> Dee</td>
+            <td> Gao</td>
+          </tr>
+          <tr>
+            <td> Ela </td>
+            <td>Smith</td>
+            <td> Alger</td>
+          </tr>
+          <tr>
+            <td>Mac</td>
+            <td>Do</td>
+            <td> Ici</td>
+          </tr>
+        </table><br/>
+
+        <!----------------------------------------->
+          <h4><u>Table 15: HTML Headings background-color.</u> </h4>
+
+        <table id="table15">
+          <tr>
+            <th> First Name</th>
+            <th> Last Name</th>
+            <th>City</th>
+          </tr>
+          <tr>
+            <td> John</td>
+            <td> Dee</td>
+            <td> Gao</td>
+          </tr>
+          <tr>
+            <td> Ela </td>
+            <td>Smith</td>
+            <td> Alger</td>
+          </tr>
+          <tr>
+            <td>Mac</td>
+            <td>Do</td>
+            <td> Ici</td>
+          </tr>
+        </table><br/>
+
+
+        <!----------------------------------------->
+          <h4><u>Table 16: HTML Data background-color.</u> </h4>
+
+        <table id="table16">
+          <tr>
+            <th> First Name</th>
+            <th> Last Name</th>
+            <th>City</th>
+          </tr>
+          <tr>
+            <td> John</td>
+            <td> Dee</td>
+            <td> Gao</td>
+          </tr>
+          <tr>
+            <td> Ela </td>
+            <td>Smith</td>
+            <td> Alger</td>
+          </tr>
+          <tr>
+            <td>Mac</td>
+            <td>Do</td>
+            <td> Ici</td>
+          </tr>
+        </table><br/>
+
+        <!----------------------------------------->
+          <h4><u>Table 17: HTML Headings & Data background-color.</u> </h4>
+
+        <table id="table17">
+          <tr>
+            <th> First Name</th>
+            <th> Last Name</th>
+            <th>City</th>
+          </tr>
+          <tr>
+            <td> John</td>
+            <td> Dee</td>
+            <td> Gao</td>
+          </tr>
+          <tr>
+            <td> Ela </td>
+            <td>Smith</td>
+            <td> Alger</td>
+          </tr>
+          <tr>
+            <td>Mac</td>
+            <td>Do</td>
+            <td> Ici</td>
+          </tr>
+        </table><br/>
+
+        <!----------------------------------------->
+          <h4><u>Table 18: HTML Table - Row color by odd or even.</u> </h4>
+
+        <table id="table18">
+          <tr >
+            <th> First Name</th>
+            <th> Last Name</th>
+            <th>City</th>
+          </tr>
+          <tr>
+            <td> John</td>
+            <td> Dee</td>
+            <td> Gao</td>
+          </tr>
+          <tr>
+            <td> Ela </td>
+            <td>Smith</td>
+            <td> Alger</td>
+          </tr>
+          <tr>
+            <td>Mac</td>
+            <td>Do</td>
+            <td>Ici</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Dee</td>
+            <td>Gao</td>
+          </tr>
+          <tr>
+            <td>Bel</td>
+            <td>Lord</td>
+            <td>Bobo</td>
+          </tr>
+          <tr>
+            <td>Matt</td>
+            <td>Deamon</td>
+            <td>Laval</td>
+          </tr>
+        </table><br/>
+
+  </body>
+</html>

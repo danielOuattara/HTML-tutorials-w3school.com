@@ -1,0 +1,93 @@
+<!---------------------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+17 03 2020
+HTML Tutorial from: https://www.w3schools.com/html/
+---------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Head</title>
+    </head>
+    <body>
+        <h1>HTML Head</h1>
+
+<!-- HTML <head> Element
+==========================
+The <head> element defines information about the document.
+The following tags describe metadata:
+
+--------------------------------------------------------------------------------
+<title>   Defines the title of a document
+--------------------------------------------------------------------------------
+<style>   Defines style information for a document
+--------------------------------------------------------------------------------
+<meta> 	  Defines metadata about an HTML document
+--------------------------------------------------------------------------------
+<link> 	  Defines the relationship between a document and an external resource
+--------------------------------------------------------------------------------
+<script>  Defines a client-side script
+--------------------------------------------------------------------------------
+<base> 	  Defines a default address or a default target for all links on a page
+ ------------------------------------------------------------------------------>
+
+
+<!--title data
+================-->
+
+<title>Page Title</title>
+
+<!-- style data
+================-->
+
+<style>
+ body {background-color: powderblue;}
+ h1 {color: red;}
+ p {color: blue;}
+</style>
+
+<!-- meta data
+=================-->
+<!--the character set to use:-->
+<meta charset="UTF-8">
+
+<!--a description of your web page::-->
+<meta name="description" content="Free Web tutorials">
+
+<!--keywords for search engines:-->
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+
+<!--the author of a page:-->
+<meta name="author" content="John Doe">
+
+<!--refresh document every 30 seconds-->
+<meta http-equiv="refresh" content="30">
+
+
+<!-- setting the Viewport
+=========================-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- link data
+==============-->
+
+ <link rel="stylesheet" href="mystyle.css">
+
+
+<!-- script data
+================-->
+<script>
+function myFunction {
+ document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+</script>
+
+<!-- base Element:
+    -------------
+The <base> element specifies the base URL and base target for all relative URLs in a page:-->
+
+    </body>
+</html>

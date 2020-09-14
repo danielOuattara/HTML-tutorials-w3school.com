@@ -1,0 +1,95 @@
+<!-------------------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+20 03 2020
+HTML Tutorial from: https://www.w3schools.com/html/
+--------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Responsive Media Queries</title>
+        <style>
+            * { box-sizing: border-box; }
+            /* body {
+                margin: 0px;
+                padding: 0px;
+            } */
+            .menu {
+              font-size: 25px;
+            }
+            .left {
+                background: #2196f3;
+                padding: 5px;
+                float: left;
+                width: 33%;
+                text-align: center;
+            }
+            .left:hover {
+                background-color: darkblue;
+                color: white;
+            }
+            .main {
+                background: #f1f1f1;
+                padding: 5px;
+                float: left;
+                width: 34%;
+                text-align: center;
+            }
+            .main:hover {
+                background-color: #909090;
+                color: white;
+            }
+
+            .right {
+                background: #4caf50;
+                padding: 5px;
+                float: left;
+                width: 33%;
+                text-align: center;
+            }
+            .right:hover {
+                background-color: darkgreen;
+                color: white;
+            }
+            /* Use a media query to add a break point at 800px: */
+            @media screen and (max-width: 800px) {
+                .left, .main, .right { width: 100%;}
+                /* The width is 100%  when the viewport is 800px or smaller */
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>HTML Responsive Media Queries</h1>
+
+
+<!-- Media Queries:
+===================
+In addition to resize text and images, it is also
+common to use media queries in responsive web pages.
+
+With media queries you can define completely different
+styles for different browser sizes. -->
+
+        <h2>Media Queries.</h2>
+        <p>Resize the browser window.</p>
+
+        <p>Make sure you reach the brekpoint at 800px when resizing this frame</p>
+
+        <div class="left menu">
+            <p>Left Menu</p>
+        </div>
+
+        <div class="main menu">
+            <p>Main Content</p>
+        </div>
+
+        <div class="right menu">
+            <p>Right Content</p>
+        </div>
+
+
+    </body>
+</html>

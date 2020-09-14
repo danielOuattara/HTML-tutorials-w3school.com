@@ -1,0 +1,197 @@
+<!--------------------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+20 03 2020
+HTML Tutorial from: https://www.w3schools.com/html/
+--------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Semantics Elements</title>
+    </head>
+    <body>
+        <h1>HTML Semantics Elements</h1>
+
+<!--NOTE: Semantic elements = elements with a meaning. -->
+
+
+<!-- What are Semantic Elements?
+================================
+A semantic element clearly describes its meaning to both the browser and
+the developer.
+
+Examples of non-semantic elements:  <div> and <span> - Tells nothing about
+---------------------------------   its content.
+
+Examples of semantic elements:   <form>, <table>, and <article> - Clearly
+-----------------------------    defines its content.
+
+
+ Why Semantic Elements ?
+===========================
+According to the W3C: "A semantic Web allows data to be shared and reused
+across applications, enterprises, and communities."
+
+
+Semantic Elements in HTML
+==============================
+In HTML there are some semantic elements that can be used to define different
+parts of a web page:
+
+ Tag           Description
+ -------       -------------
+ -------------------------------------------------------------------------------
+ <article> 	   Defines an article
+-------------------------------------------------------------------------------
+ <aside> 	     Defines content aside from the page content
+-------------------------------------------------------------------------------
+ <details> 	   Defines additional details that the user can view or hide
+-------------------------------------------------------------------------------
+ <figcaption>  Defines a caption for a <figure> element
+-------------------------------------------------------------------------------
+ <figure> 	   Specifies self-contained content, like illustrations,
+               diagrams, photos, code listings, etc.
+-------------------------------------------------------------------------------
+ <footer> 	   Defines a footer for a document or section
+-------------------------------------------------------------------------------
+ <header> 	   Specifies a header for a document or section
+-------------------------------------------------------------------------------
+ <main> 	     Specifies the main content of a document
+-------------------------------------------------------------------------------
+ <mark> 	     Defines marked/highlighted text
+-------------------------------------------------------------------------------
+ <nav> 	       Defines navigation links
+-------------------------------------------------------------------------------
+ <section> 	   Defines a section in a document
+-------------------------------------------------------------------------------
+ <summary> 	   Defines a visible heading for a <details> element
+-------------------------------------------------------------------------------
+ <time> 	     Defines a date/time
+----------------------------------------------------------------------------->
+
+      <h1> Section Element</h1>
+<!-- A 'section' is a thematic grouping of content, typically with a heading."
+A home page could normally be split into sections for introduction,
+content, and contact information.-->
+
+      <section>
+          <h2>WWF</h2>
+          <p>The World Wide Fund for Nature (WWF) is an international
+             organization working on issues regarding the conservation,
+               research and restoration of the environment, formerly named
+               the World Wildlife Fund. WWF was founded in 1961.</p>
+        </section>
+
+        <section>
+            <h2>WWF's Panda symbol</h2>
+            <p>The Panda has become the symbol of WWF. The well-known panda logo
+               of WWF originated from a panda named Chi Chi that was transferred
+               from the Beijing Zoo to the London Zoo in the same year of
+               the establishment of WWF.</p>
+        </section>
+
+        <h1>Article Element</h1>
+<!-- The <article> element specifies independent, self-contained content.
+An article should make sense on its own, and it should be possible to read it
+independently from the rest of the web site.Examples of where an <article>
+element can be used:
+
+    > Forum post
+    > Blog post
+    > Newspaper article
+ -->
+        <article class="">
+            <h2>What Does WWF Do?</h2>
+            <p>WWF's mission is to stop the degradation of our planet's natural
+               environment, and build a future in which humans live in harmony
+               with nature.</p>
+        </article>
+
+
+
+<!-- Nesting <article> in <section> or Vice Versa?
+
+The <article> element specifies independent, self-contained content.
+The <section> element defines section in a document.
+Can we use the definitions to decide how to nest those elements ? No, we cannot!
+
+So, on the Internet, you will find HTML pages with <section> elements containing
+<article> elements, and <article> elements containing <section> elements.
+You will also find pages with <section> elements containing <section> elements,
+and <article> elements containing <article> elements. -->
+
+
+        <h1> Header Element</h1>
+<!-- The <header> element specifies a header for a document or section.
+The <header> element should be used as a container for introductory content.
+You can have several <header> elements in one document. -->
+
+        <article class="">
+            <header>
+                <h2>What Does WWF do ?</h2>
+                <p>WWF's mission:</p>
+            </header>
+                <p>WWF's mission is to stop the degradation of our planet's
+                   natural environment, and build a future in which humans live
+                   in harmony with nature.</p>
+        </article>
+
+        <h1>Footer Element</h1>
+<!-- The <footer> element specifies a footer for a document or section.
+A <footer> element should contain information about its containing element.
+A footer typically contains the author of the document, copyright information,
+links to terms of use, contact information, etc.
+You may have several <footer> elements in one document. -->
+
+        <footer>
+            <p> Posted by Daniel.B OUATTARA</p>
+            <p>contact information:
+            <a href="mailto:daniel.ouattara_AT_gmx.com">daniel.ouattara_AT_gmx.com</a></p>
+        </footer>
+
+        <h1>Nav Element</h1>
+<!-- The <nav> element defines a set of navigation links.
+NOTE:  NOT all links of a document should be inside a <nav> element.
+-----
+The <nav> element is intended only for major block of navigation links-->
+        <nav>
+            <a href="/html/">HTML</a> |
+            <a href="/css/">CSS</a> |
+            <a href="/js/">JavaScript</a> |
+            <a href="/jquery/">jQuery</a>
+        </nav>
+
+
+        <h1>Aside Element</h1>
+<!-- The <aside> element defines some content aside from the content
+it is placed in (like a sidebar).
+The <aside> content should be related to the surrounding content. -->
+
+        <p>My family and I visited The Epcot Center this summer</p>
+        <aside class="">
+            <h4>Epcot Center</h4>
+            <p>The Epcot Center is a theme park in Disney World, Florida</p>
+        </aside>
+
+
+        <h1>Figure and Figcaption Elements</h1>
+<!-- An image and a caption can be grouped together in a <figure> element.
+The purpose of a caption is to add a visual explanation to an image -->
+
+        <h2>Animal to discover</h2>
+        <p> Koalo is an animal living in Australia and New-Zealand.
+            It has a size about 50cm height, and weights around 30kg.
+            Koala Mothers carry their baby  in the front. Koalas are mainly
+            vegetarian and appreciate eucalyptus leefs as food</p>
+        <figure>
+            <img src="../images/Koala.jpg"
+                 alt="Koala mother, staring at the camera objectif while
+                      sitting on a ecalyptus tree"
+                 style="max-width:100%;"/>
+             <figcaption style="text-align: center;">
+               Fig.1: Female koala on a tree,</figcaption>
+        </figure>
+
+    </body>
+</html>

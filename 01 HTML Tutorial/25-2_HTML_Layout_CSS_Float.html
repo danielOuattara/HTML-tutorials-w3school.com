@@ -1,0 +1,113 @@
+<!--------------------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+20 03 2020
+HTML Tutorial from: https://www.w3schools.com/html/
+---------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Layout: CSS Float property</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+            * {box-sizing: border-box; }
+
+            body {font-family: "Arial", "Helvetica", "sans-serif";}
+
+            /* Styling the header */
+            header {
+                background-color: #666;
+                padding: 10px;
+                text-align: center;
+                color: white;
+                font-size: 25px;
+            }
+
+            /* Create two columns/boxes that floats next to each other */
+            nav {
+                float: left;
+                width: 25%;
+                height: 300px; /* for demonstration only, should be removed */
+                background: #CCC;
+                padding: 20px;
+            }
+            /*  Style the list in side the menu  */
+            nav ul { list-style-type: none; padding: 0px; }
+
+            nav  li { margin: 10px 0;}
+            nav li a {
+              text-decoration: none;
+              font-size: 20px;
+            }
+            article {
+                float: left;
+                width: 75%;
+                height: 300px; /* for demonstration only, should be removed */
+                background-color: #f1f1f1;
+                padding: 20px;
+            }
+
+            /* Clear floats after the columns */
+            section:after {
+                content: "";
+                clear: both;
+            }
+            /* Style the footer */
+            footer {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            @media (max-width: 600px) {
+                nav, article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML Layout: CSS Float property.</h1>
+
+        <p>In this example, we have created a header,two columns/boxes and a
+          footer. On smaller screens, the columns will stack on top of each
+          other.</p>
+
+        <p>Resize the browser window to see the responsive effect (you will
+          learn more about this in our next chapter - HTML Responsive.)</p>
+
+        <header>
+            <h2>Cities</h2>
+        </header>
+
+        <section>
+
+            <nav>
+                <ul>
+                    <li><a href="#">London</a></li>
+                    <li><a href="#">Paris</a></li>
+                    <li><a href="#">Tokyo</a></li>
+                </ul>
+            </nav>
+
+            <article class="">
+                <h1>London</h1>
+                <p>London is the capital city of England. It is the most
+                   populous city in the  United Kingdom, with a
+                   metropolitan area of over 13 million inhabitants.</p>
+                <p>Standing on the River Thames, London has been a
+                   major settlement for two millennia, its history
+                   going back to its founding by the Romans, who
+                   named it Londinium.</p>
+            </article>
+
+        </section>
+
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,146 @@
+<!--.---------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+10 08 2020
+HTML Tutorial Multimedia
+https://www.w3schools.com/html/
+------------------------------------------->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+      <title>HTML Audio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>HTML Audio.</h1><hr/>
+
+
+
+<!-- The HTML <audio> element is used to play an audio file on a web page.-->
+
+
+<!-- HTML Audio Tags
+=====================
+
+Tag 	Description
+-------------------------------------------------------
+<audio> 	Defines sound content
+-------------------------------------------------------
+<source> 	Defines multiple media resources for
+            media elements, such as <video> and <audio>
+------------------------------------------------------->
+
+<!-- The HTML <audio> Element
+=============================
+
+To play an audio file in HTML, use the <audio> element: -->
+
+    <audio src="./../../images/South_America.mp3" controls>
+       Your broswer does not support the audio element
+    </audio><br/><br/>
+
+    <audio controls>
+        <source src="./../../images/Thailand_Nature.mp3" type="audio/mp3"/>
+        <source src="./../../images/Thailand_Nature.mp3" type="audio/mpeg">
+        Your broswer does not support the audio element
+    </audio>
+
+
+<!-- HTML Audio - How It Works
+===============================
+
+The 'controls' attribute adds audio controls, like play, pause, and volume.
+
+The <source> element allows you to specify alternative audio files which 
+the browser may choose from. The browser will use the first recognized format.
+
+The text between the <audio> and </audio> tags will only be displayed in 
+browsers that do not support the <audio> element.
+
+
+--Optional Attributes for <audio>
+===================================
+
+Attribute  Value 	 Description
+--------------------------------------------------------------------------
+autoplay   autoplay  Specifies that the audio will start playing 
+                     as soon as it is ready
+--------------------------------------------------------------------------
+controls   controls  Specifies that audio controls should be displayed 
+                     (such as a play/pause button etc).
+--------------------------------------------------------------------------
+loop 	   loop 	 Specifies that the audio will start over again, 
+                     every time it is finished
+--------------------------------------------------------------------------
+muted 	   muted 	 Specifies that the audio output of the video should
+                     be muted
+--------------------------------------------------------------------------
+preload    auto      Specifies if and how the author thinks the audio 
+           metadata  should be loaded when the page loads
+           none 	
+--------------------------------------------------------------------------
+src 	   URL 	     Specifies the URL of the audio file
+--------------------------------------------------------------------------
+
+
+Browser Support
+================
+
+The numbers in the table specify the first browser version that fully 
+supports the <audio> element.
+
+---------------------------------------------------
+            Chrome  Edge  FireFox   Safari   Opera
+---------------------------------------------------
+<audio> 	4.0 	9.0 	3.5 	4.0 	10.5
+---------------------------------------------------
+
+
+HTML Audio Formats
+===================
+
+There are three supported audio formats: MP3, WAV, and OGG. 
+The browser support for the different formats is: 
+
+----------------------------------
+Browser 	MP3 	WAV 	OGG
+----------------------------------
+Edge/IE 	YES 	NO 	    NO
+----------------------------------
+Chrome 	    YES 	YES 	YES
+----------------------------------
+Firefox 	YES 	YES 	YES
+----------------------------------
+Safari 	    YES 	YES 	NO
+----------------------------------
+Opera 	    YES 	YES 	YES
+----------------------------------
+
+
+HTML Audio - Media Types
+==========================
+
+----------------------------------
+File Format 	Media Type
+----------------------------------
+MP3 	        audio/mpeg
+----------------------------------
+OGG 	        audio/ogg
+----------------------------------
+WAV 	        audio/wav
+----------------------------------
+
+HTML Audio - Methods, Properties, and Events
+=============================================
+
+HTML defines DOM methods, properties, and events for the <audio> element.
+This allows you to load, play, and pause audios, as well as set duration and volume.
+There are also DOM events that can notify you when an audio begins to play, is paused, etc.
+For a full DOM reference, go to our HTML Audio/Video DOM Reference. -->
+
+
+
+
+
+</body>
+</html>

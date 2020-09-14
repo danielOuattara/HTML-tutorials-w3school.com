@@ -1,0 +1,172 @@
+<!--.----------------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+10 03 2020
+HTML Tutorial from: https://www.w3schools.com/html/
+-------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+      <style>
+        a.link1:link {
+            color: green; 
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a.link1:visited {
+            color: pink; 
+            background-color: transparent; 
+            text-decoration: none; 
+        }
+
+        a.link1:hover { 
+            color: red; 
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a.link1:active { 
+            color: yellow; 
+            background-color: transparent;
+            text-decoration: underline; 
+        }
+        /*----------------------------------------------------------*/
+
+        a:link { 
+            color: green; 
+            background-color: transparent;
+            text-decoration: none; 
+        }
+
+        a:visited { 
+            color: pink; 
+            background-color: transparent;
+            text-decoration: none; 
+        }
+
+        a:hover { 
+            color: blue; 
+            background-color: transparent;
+            text-decoration: underline; 
+        }
+
+        a:active { 
+            color: yellow; 
+            background-color: transparent;
+            text-decoration: underline; 
+        }
+
+        /*CSS for HTML Link Buttons*/
+        a.out:link, a.out:visited { 
+            background-color: #f44336; 
+            color: white;
+            padding: 15px 25px; 
+            text-align: center; 
+            text-decoration: none;
+            display: inline-block; 
+        }
+
+        a.out:hover, a.out:active {
+             background-color: red;
+        }
+
+    </style>
+        <meta charset="utf-8">
+        <title>HTML Links</title>
+    </head>
+    <body>
+        <h1>HTML Links.</h1><hr/>
+
+        <!-- HTML Links are Hyperlinks -->
+
+
+        <!-- HTML Links Syntax -->
+        <a class="link1" href="https://www.w3schools.com/html/"
+           target="_blank">Visit our HTML Tutorial section</a><br/><br/>
+
+
+        <!-- Local Links -->
+        <a href="../../images/html5.png" target="_blank">Local link: HTML Images</a><br/><br/>
+
+
+        <!-- HTML Links - Target Attribute
+        ==================================
+
+            'target' attributes values:
+
+            > '_blank'  - Opens the linked document in a new window or tab
+
+            > '_self'   - Opens the linked document in the same window/tab 
+                          as it was clicked (this is default)
+            
+            > '_parent' - Opens the linked document in the parent frame
+
+            > '_top'    - Opens the linked document in the full body of the 
+                          window (Webpage locked in a frame)
+
+            > framename - Opens the linked document in a named frame  -->
+
+
+        <!-- HTML Links - Image as a Link wwwwwwwwww-->
+        <a href="default.asp">
+            <img src="./../../images/smiley-1.jpg"alt="HTML tutorial"
+                 style= "width:42px; height:42px; border:0;" >
+        </a><br/><br/>
+
+       <!-- Button as a link -->
+       <p>Clikc the button to go to the default page.</p>
+       <button onclick = "document.location = 'https://www.w3schools.com/html/'">
+         HTML Tutorial page</button><br/>
+
+       <!-- Link title -->
+       <p>The title attribute specifies extra information about an element.
+          The information is most often shown as a tooltip text
+          when the mouse moves over the element.</p>
+       <a href="https://www.w3schools.com/html/" target="_blank"
+          title="Go to W3Schools Tutorial, HTML section">HTML Tutorial #</a><br/><br/>
+
+
+<!-- Absolute URLs vs. Relative URLs
+=======================================
+
+Both examples above are using an absolute URL (a full web address) in the href attribute.
+
+A local link (a link to a page within the same website) is specified with a relative URL 
+(without the "https://www" part): -->
+        
+<!-- # External Paths -->
+        <!-- This example uses a full URL to link to a web page: -->
+        <a href="https://www.w3schools.com/html/default.asp">HTML tutorial *</a><br/><br/>
+
+        <!-- This example links to a page located in the html folder
+             on the current web site: -->
+        <a href="/html/default.asp">HTML tutorial</a><br/><br/>
+
+        <!-- This example links to a page located in the same folder as the current page: -->
+        <a class="out" href="default.asp">HTML tutorial</a><br/><br/>
+
+        <!-- You can read more about file paths in the chapter HTML File Paths. -->
+
+<!--Summary
+
+    Use the <a> element to define a link
+    Use the 'href' attribute to define the link address
+    Use the 'target' attribute to define where to open the linked document
+    Use the <img> element (inside <a>) to use an image as a link  -->
+
+
+    <!-- HTML Link Colors -->
+
+    <!-- By default, a link will appear like this (in all browsers):
+    > An unvisited link is underlined and blue
+    > A visited link is underlined and purple
+    > An active link is underlined and red -->
+
+
+    <!-- HTML Links Buttons -->
+
+    <!-- HTML Link Bookmarks -->
+
+    </body>
+</html>

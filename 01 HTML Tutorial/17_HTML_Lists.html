@@ -1,0 +1,164 @@
+<!--
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+03 03 2020
+HTML Tutorial from: https://www.w3schools.com/html/
+ -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Lists</title>
+        <style >
+
+              .one ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                overflow: auto;
+                background-color: #444444;
+                width: 100%}
+
+            .one ul li {
+              width: 25%;
+              float: left;
+             }
+
+            .one  li  a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+            }
+
+            .one li:hover { background-color: #111; }
+
+        </style>
+    </head>
+    <body>
+        <h1>HTML Lists</h1>
+
+        <!-- HTML Unordered List -->
+        <ul style="list-style-type:none;">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        <ul style="list-style-type:circle;">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        <ul style="list-style-type:square;">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        <ul style="list-style-type:disc;">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+        <!-- HTML Ordered List -->
+        <ol type="1">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        <ol type="A">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        <ol type="a">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        <ol type="I">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        <ol type="i">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+
+        <!-- HTML Description Lists -->
+        <dl>
+            <dt>Coffee</dt>
+            <dd>black hot tasty drink</dd>
+            <dt>Tea</dt>
+            <dd>Most of time colored soft drink</dd>
+            <dt>Milk</dt>
+            <dd>white drink</dd>
+        </dl>
+
+        <!-- HTML Nested Lists -->
+        <ul>
+            <li>Coffee
+                <ul>
+                    <li>Arabica</li>
+                    <li>Ethiopian</li>
+                    <li>South american</li>
+                </ul>
+            </li>
+            <li>Tea
+                <ul>
+                    <li>White Tea</li>
+                    <li>Green Tea</li>
+                    <li>Black Tea</li>
+                </ul>
+            <li>Milk
+                <ul>
+                    <li>Cow Milk</li>
+                    <li>Coat Milk</li>
+                    <li>Donkey Milk</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Nested HTML Lists -->
+        <ol start="50">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        <ol type="A" start="4">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+        <ol type="I" start="40">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+        <!-- Horizontal List WITHOUT CSS -->
+          <ul>
+              <li><a href="#home/">Home</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#about">About</a></li>
+          </ul><br/><br/><br/>
+
+
+        <!-- Horizontal List WITH CSS -->
+        <div class="one">
+          <ul>
+              <li><a href="#home/">Home</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+
+
+    </body>
+</html>

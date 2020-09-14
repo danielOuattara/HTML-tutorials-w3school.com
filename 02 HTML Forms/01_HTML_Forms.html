@@ -1,0 +1,307 @@
+<!-----------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+28 03 2020
+JavaScript Tutorial : Forms
+https://www.w3schools.com/js/
+------------------------------------------->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Forms</title>
+    </head>
+    <body>
+
+        <h1>HTML Forms</h1>
+
+<!-- An HTML form is used to collect user input. The user input can then
+be sent to a server for processing.                                         -->
+
+        <h2>Form element</h2>
+
+        <form action="/action_page.php" method="GET" name="form_1">
+
+          <label for="fname"><b>First Name:</b></label>
+          <input type="text" id="fname" name="fname" value="John"/> <br/>
+
+          <label for="lname"> <b>Last Name:</b></label> <br/>
+          <input type="text" id="lname" name="lname" value="Doe"/> <br/><br/>
+
+          <input type="submit" value="Submit"/>
+
+        </form>
+
+        <p>If you click the "Submit" button, the form-data will be sent to
+           a page called "/action_page.php".</p>
+
+
+<!-- Here is the list of all <form> attributes:
+
+Attribute 	      Description
+----------        ------------
+accept-charset 	  Specifies the charset used in the submitted form
+                  (default: the page charset).
+--------------------------------------------------------------------------------
+action 	          Specifies an address (url) where to submit the form
+                  (default: the submitting page).
+--------------------------------------------------------------------------------
+autocomplete 	    Specifies if the browser should autocomplete the form
+                  (default: on).
+--------------------------------------------------------------------------------
+enctype 	        Specifies the encoding of the submitted data
+                  (default: is url-encoded).
+--------------------------------------------------------------------------------
+method 	          Specifies the HTTP method used when submitting the form
+                  (default: GET).
+--------------------------------------------------------------------------------
+name 	            Specifies a name used to identify the form
+                  (for DOM usage: document.forms.name).
+--------------------------------------------------------------------------------
+novalidate 	      Specifies that the browser should not validate the form.
+--------------------------------------------------------------------------------
+target 	          Specifies the target of the address in the action attribute
+                  (default: _self).
+------------------------------------------------------------------------------->
+
+
+<!-- The <form> Element.
+=========================
+
+THe HTML 'form element' defines a form that is used to collect user input.
+
+An HTML 'form element' contains other elements called 'form element' of
+different types: 'input elements', 'text fields', 'checkboxes', 'radio buttons',
+'submit buttons, ...
+
+<form class="" action="" method="" name="" ...>
+
+... form elements ...
+
+</form>
+
+
+Tag 	      Description
+----        ------------
+-----------------------------------------------------------------------
+<form> 	    Defines an HTML form for user input
+-----------------------------------------------------------------------
+<input> 	  Defines an input control
+-----------------------------------------------------------------------
+<textarea> 	Defines a multiline input control (text area)
+-----------------------------------------------------------------------
+<label> 	  Defines a label for an <input> element
+-----------------------------------------------------------------------
+<fieldset> 	Groups related elements in a form
+-----------------------------------------------------------------------
+<legend> 	  Defines a caption for a <fieldset> element
+-----------------------------------------------------------------------
+<select> 	  Defines a drop-down list
+-----------------------------------------------------------------------
+<optgroup> 	Defines a group of related options in a drop-down list
+-----------------------------------------------------------------------
+<option> 	  Defines an option in a drop-down list
+-----------------------------------------------------------------------
+<button> 	  Defines a clickable button
+-----------------------------------------------------------------------
+<datalist> 	Specifies a list of pre-defined options for input controls
+-----------------------------------------------------------------------
+<output> 	  Defines the result of a calculation
+----------------------------------------------------------------------->
+
+
+<!-- The <input> Element.
+==========================
+
+The <input> element is the most important form element.
+The <input> element is displayed in several ways, depending on the type
+attribute.
+
+Here are some examples:
+
+Type 	                Description
+------                --------------
+<input type="text"> 	Defines a single-line text input field
+--------------------------------------------------------------------------------
+<input type="radio"> 	Defines a radio button (for selecting one of many choices)
+--------------------------------------------------------------------------------
+<input type="submit"> Defines a submit button (for submitting the form)
+--------------------------------------------------------------------------------
+
+You will learn a lot more about input types later in this tutorial.          -->
+
+        <br/><hr/><br/>
+        <h2>input type</h2>
+
+        <form action="index.html" method="post">
+          <input type="text" name="" value=""/> type="text"<br/>
+          <input type="radio" name="" value=""/> type="radio"<br/>
+          <input type="submit" name="" value=""/>type="submit"<br/>
+        </form>
+
+        <br/><hr/><br/>
+
+
+<!-- Text Fields.
+==================
+
+<input type="text"> defines a single-line input field for text input. -->
+
+        <h2>Text Field</h2>
+
+        <form>
+            <label for="fname">First Name:</label><br/>
+            <input type="text" id="fname" name="fname"
+                   placeholder="Enter first name"/><br/>
+
+            <label for="lname">Last Name:</label><br/>
+            <input type="text" id="lname" name="lname" value=""/><br/>
+        </form><br/><hr/><br/>
+
+
+<!-- The <label> Element.
+=========================
+
+The '<label>' tag defines a label for many form elements.
+
+The <label> element is useful for screen-reader users, because the
+screen-reader will read out loud the label when the user is focused
+on the input element.
+
+The <label> element also help users who have difficulty clicking on very small
+regions (such as radio buttons or checkboxes) - because when the user clicks
+the text within the <label> element, it toggles the radio button/checkbox.
+
+NOTE: The 'for' attribute of the '<label>' tag should be equal to the
+----- 'id' attribute of the <input> element to bind them together.  -->
+
+
+ <!-- Radio Buttons.
+ ===================
+
+<input type="radio"> defines a radio button.
+Radio buttons let a user select ONE of a limited number of choices. -->
+
+        <h2>Radio Buttons</h2>
+
+        <form >
+            <input type="radio" id="male" name="gender" value="male"/>
+            <label for="male">Male</label><br/>
+            <input type="radio" id="female" name="gender" value="female"/>
+            <label for="female">Female</label><br/>
+            <input type="radio" id="other" name="gender" value="other"/>
+            <label for="other">Other</label><br/>
+        </form><br/><hr/><br/>
+
+
+<!-- The Submit Button.
+=========================
+
+<input type="submit"> defines a button for 'submitting' the form data to a
+'form-handler'.
+
+The 'form-handler' is typically a page on the server with a script for
+processing input data.
+
+The 'form-handler' is specified in the form's 'action' attribute. -->
+
+        <h2>Submit Button</h2>
+
+        <form action="/action_page.php">
+
+            <label for="fname">First Name: </label><br/>
+            <input type="text"  id="fname" name="fname" value="John"/><br/>
+
+            <label for="lname">Last Name: </label><br/>
+            <input type="text"  id="lname" name="lname" value="Doe"/><br/><br/>
+
+            <input type="submit" value="Submit"/>
+
+        </form>
+
+        <p>If you click the "Submit" button, the form-data will be sent to
+           a page called "/action_page.php".</p><br/><hr/><br/><br/>
+
+<!-- The Action Attribute.
+==========================
+
+The 'action' attribute defines the action to be performed when the form is
+submitted. Usually, the form data is sent to a page on the server when the user
+clicks on the submit button. In the example above, the form data is sent to a
+page on the server called "/action_page.php". This page contains a server-side
+script that handles the form data. If the action attribute is omitted, the
+action is set to the current page.                                           -->
+
+
+<!-- The Target Attribute.
+==========================
+
+The submitted result will be:
+
+"_blank": opened in a new browser tab,
+
+"_self": submitted in the current window.
+
+Other legal values: "_parent", "_top", or a name representing the name of an
+iframe.-->
+            <form action="/action_page.php" target="_blank">
+
+
+<!--The method Attribute.
+=========================
+
+The method attribute specifies the HTTP method (GET or POST)
+to be used when submitting the form data.-->
+            <form action="/action_page.php" method="get">
+            <form action="/action_page.php" method="post">
+
+<!-- When to Use GET ?
+======================
+
+The default HTTP method when submitting form data is GET.
+However, when GET is used, the form data will be visible in the page's
+address field:
+
+            /action_page.php?firstname=John&lastname=Doe
+
+Notes on GET:
+-------------
+    > Appends form-data into the URL in name/value pairs
+    > The length of a URL is limited (2048 characters)
+    > Never use GET to send sensitive data! (will be visible in the URL)
+    > Useful for form submissions where a user wants to bookmark the result
+    > GET is better for non-secure data, like query strings in Google -->
+
+
+<!-- When to Use POST ?
+=======================
+
+Always use POST if the form data contains sensitive or personal information.
+The POST method does not display the form data in the page address field.
+
+Notes on POST:
+--------------
+    > POST has no size limitations, and can be used to send large amounts of data.
+    > Form submissions with POST cannot be bookmarked -->
+
+
+<!-- The name Attribute.
+========================
+
+Each input field must have a 'name attribute' to be submitted.
+If the 'name attribute' is omitted, the data of that '<input> element' will not
+be sent at all. -->
+
+            <form action="/action_page.php">
+
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" value="John"/><br><br>
+
+            <input type="submit" value="Submit"/>
+
+            </form>
+
+<!-- Notice that the value of the "First name" field will not
+be submitted, because the 'input element' does not have a name attribute. -->
+
+    </body>
+</html>

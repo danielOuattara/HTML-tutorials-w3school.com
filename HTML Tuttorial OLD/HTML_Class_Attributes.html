@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Class Attribute</title>
+    <style>
+      .cities {
+        background-color: grey;
+        color: white;
+        padding: 20px;
+        margin: 20px;
+      }
+      span.note {
+        font-size: 120%;
+        color: red;
+      }
+      .town {
+        background-color: tomato;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+      }
+      .ville {
+        background-color: tomato;
+        color: white;
+        padding: 10px;
+        padding: 10px;
+      }
+
+      .plus {
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h2> HTML Class Attribute</h2>
+
+    <p>The HTML class attribute is used to define equal styles for elements with
+       the same class. So all HTML elements int the same class attribute will get same style</p>
+
+    <h3>Using The Class Attribute</h3>
+
+    <div class="cities">
+      <h2>Douala</h2>
+      <p>Yaoundé is the capital of Cameroun</p>
+    </div>
+    <div class="cities">
+      <h2>Ouagadougou</h2>
+      <p>Ouagadougou is the capital of Burkina Faso</p>
+    </div>
+    <div class="cities">
+      <h2>Cotonou</h2>
+      <p>Coutonou is the capital of Benin</p>
+    </div>
+
+    <h3>The Class Attribute on Inline Elements </h3>
+    <p>The HTML class attribute can also be used on inline elements, example below:</p>
+
+    <h3>My <span class="note">Important</span> Heading</h3>
+    <p>This is an <span class="note">important</span> text</p>
+
+
+    <h3>Select Elements With a Specific Class</h3>
+
+    <h4 class="town">London</h4>
+    <p>It is the capital of England </p>
+
+    <h4 class="town">Berlin</h4>
+    <p>It is the capital of Germany</p>
+
+    <h4 class="town">Tokyo</h4>
+    <p>It is the capital of Japan</p>
+
+    <h3>Multiple Classes</h3>
+
+    <h4 class="ville plus">London</h4>
+    <h4 class="ville">Berlin</h4>
+    <h4 class="ville">Tokyo</h4>
+
+    <h3>Different Tags Can Share Same Class</h3>
+
+    <h4 class="ville">Edmonton</h4>
+    <p class="ville">Edmonton est une ville du Canada</p>
+
+    <h3> Using The Class Attribute in JavaScript:</h3>
+    <p>Clickon the button bellow to make desappear some text</p>
+
+    <button onclick="disparaitre()">Hide Element</button>
+    <button onclick="apparaitre()">Show Element</button>
+    <h4 class="lieu">London</h4>
+    <p>London is a city in England</p>
+    <h4 class="lieu">Nice</h4>
+    <p>Nice is a city in France</p>
+    <h4 class="lieu">Bangkok</h4>
+    <p>Bangkok is a city in Thailand</p>
+
+    <script type="text/javascript">
+
+      function disparaitre() {
+        var x = document.getElementsByClassName("lieu");
+        for (var i = 0; i < x.length; i++){
+          x[i].style.display = "none";
+        }
+      }
+      /*
+      function apparaitre() {
+        var x = document.getElementsByClassName("lieu");
+        for (var i = 0; i < x.length; i++){
+          x[i].style.display = "true";
+        }
+      }
+      */
+    </script>
+
+  </body>
+</html>

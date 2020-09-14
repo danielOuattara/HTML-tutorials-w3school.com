@@ -1,0 +1,146 @@
+<!--.---------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+10 08 2020
+HTML Tutorial Multimedia
+https://www.w3schools.com/html/
+------------------------------------------->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+      <title>HTML Plung-ins</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>HTML Plung-ins.</h1><hr/>
+
+<!-- Plug-ins are computer programs that extend the standard functionality of the browser.
+
+
+Suggestion
+==============
+
+ > To display a picture, it is better to use the <img> tag.
+ > To display HTML, it is better to use the <iframe> tag.
+ > To display video or audio, it is better to use the <video> and <audio> tags.
+ 
+Plug-ins
+=========
+
+Plug-ins were designed to be used for many different purposes:
+
+    > To run Java applets
+    > To run Microsoft ActiveX controls
+    > To display Flash movies
+    > To display maps
+    > To scan for viruses
+    > To verify a bank id
+
+
+Warning !
+=========
+
+> Most browsers no longer support Java Applets and Plug-ins.
+
+> ActiveX controls are no longer supported in any browsers.
+
+> The support for Shockwave Flash has also been turned off in modern browsers.
+
+
+The <object> Element
+=====================
+
+The <object> element is supported by all browsers.
+
+The <object> element defines an embedded object within an HTML document.
+
+It was designed to embed plug-ins (like Java applets, PDF readers, and 
+Flash Players) in web pages, but can also be used to include HTML in HTML:
+
+Example 
+--------                                                                 -->
+
+        <object width="100%" height="500px" data="./../01 HTML Tutorial/16_HTML_Tables.html"></object>
+        <br/><br/>
+
+<!--Or images if you like:
+
+Example
+-------                                                                   -->
+        <object data="./../../images/scenes-of-nature.mp4"></object><br/><br/>
+
+
+<!-- Attributes <object>
+==========================
+
+Attribute 	Value 	Description
+-------------------------------------------------------------------
+data 	       URL 	        Specifies the URL of the resource 
+                            to be used by the object
+-------------------------------------------------------------------
+form 	       form_id 	    Specifies which form the object 
+                            belongs to
+-------------------------------------------------------------------
+height 	       pixels 	    Specifies the height of the object
+-------------------------------------------------------------------
+name           name 	    Specifies a name for the object
+-------------------------------------------------------------------
+type           media_type 	Specifies the media type of data 
+                            specified in the data attribute
+-------------------------------------------------------------------
+typemustmatch  true/false 	Specifies whether the type attribute 
+                            and the actual content of the resource 
+                            must match to be displayed
+-------------------------------------------------------------------
+usemap 	       #mapname 	Specifies the name of a client-side 
+                            image map to be used with the object
+-------------------------------------------------------------------
+width 	       pixels 	    Specifies the width of the object 
+------------------------------------------------------------------->
+
+
+<!--The <embed> Element 
+========================
+
+(Defines a container for an external application)
+
+The <embed> element is supported in all major browsers.
+The <embed> element also defines an embedded object within an HTML document.
+
+Web browsers have supported the <embed> element for a long time. 
+However, it has not been a part of the HTML specification before HTML5.
+
+Example
+-------                                                            -->
+<embed src="./../../images/smiley-1.jpg"/>
+
+<!-- Note that the <embed> element does not have a closing tag. 
+It can not contain alternative text.
+
+The <embed> element can also be used to include HTML in HTML:
+Example
+-------                                                                  -->
+<embed width="100%" height="500px" src="./02_HTML_Video.html"/>
+ 
+
+<!-- Attributes fro <embed>
+=============================
+
+----------------------------------------------------
+Attribute 	Value 	    Description
+----------------------------------------------------
+height 	    pixels 	    Specifies the height of 
+                        the embedded content
+----------------------------------------------------
+src 	    URL 	    Specifies the address of 
+                        the external file to embed
+----------------------------------------------------
+type        media_type 	Specifies the media type 
+                        of the embedded content
+----------------------------------------------------
+width 	    pixels 	    Specifies the width of 
+                         the embedded content 
+----------------------------------------------------
+
+</body>
+</html>

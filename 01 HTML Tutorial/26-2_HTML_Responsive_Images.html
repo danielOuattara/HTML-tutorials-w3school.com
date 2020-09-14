@@ -1,0 +1,55 @@
+<!-------------------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+20 03 2020
+HTML Tutorial from: https://www.w3schools.com/html/
+--------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Responsive Images</title>
+    </head>
+    <body>
+        <h1>HTML Responsive Images</h1>
+
+<!-- Responsive Images
+=======================
+Responsive images are images that scale nicely to fit any browser size.
+
+'width' property: If the CSS 'width' property is set to 100%, the image will be
+--------------    responsive and scale up and down:
+
+Notice: The image can be scaled up to be larger than its original size.
+        A better solution, in many cases, will be to use the 'max-width'
+        property instead of 'width' -->
+
+          <img src="../images/Koala.jpg"
+               alt="Koala in  tree , eye fixing the photograph"
+               style="width:100%;"/>
+
+
+<!-- 'max-width' Property: If the 'max-width' property is set to 100%, the image
+-------------------------  will scale down. If it has to, but never scale up
+                           to be larger than its original size:-->
+
+          <img src="../images/Koala.jpg"
+               alt="Koala in a tree, eye fixing the photograph"
+               style="max-width:100%;"/>
+
+
+<!-- Different Images Depending on Browser Width:
+-------------------------------------------------
+
+The HTML <picture> element allows you to define
+different images for different browser window sizes.-->
+
+          <picture>
+            <source src="../images/acacia_flowers.jpg" media="(max-width: 300px)"/>
+            <source srcset="../images/acacia-leaves.jpg" media="(max-width: 500px)"/>
+            <source srcset="../images/acacia-trees.jpg" media="(max-width: 800px)"/>
+            <img src="../images/yellow-acacia.jpg" alt="Flowers">
+          </picture>
+     </body>
+</html>

@@ -1,0 +1,104 @@
+<!-------------------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+20 03 2020
+HTML Tutorial from: https://www.w3schools.com/html/
+--------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Responsive Web Page - Example 1</title>
+        <style>
+            * { box-sizing: border-box; }
+
+            body {font-family: "Verdana"; color: #606060;} /* */
+
+            .hello {    /* */
+                background-color: #d4d4d4;
+                padding: 15px;
+                text-align: center; }
+
+            .root {overflow:auto ;}  /* */
+
+            .root .menu {
+                float: left;
+                width: 20%;
+                text-align: center; }
+
+            .root .menu a {
+                background-color: #d4d4d4;
+                padding: 8px;
+                margin-top: 7px;
+                text-decoration: none;
+                display: block;
+                width: 100%;
+                color: black; }
+
+            .root .main {
+                float: left;
+                width: 60%;
+                padding: 0 20px;
+            }
+             .root .right {
+                 background-color: #d4d4d4;
+                float: left;
+                width: 20%;
+                padding: 15px;
+                margin-top: 7px;
+                text-align: center;
+            }
+
+            .copyright {
+                background-color: #d4d4d4;
+                text-align: center;
+                padding: 10px;
+                margin-top: 7px; }
+
+            @media only screen and (max-width: 620px) {
+                /* For mobile phones. */
+                .root .menu, .root .main, .root .right {
+                    width: 100%;
+                }
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <h1>HTML Responsive Web Page - Example 1</h1>
+<!-- A responsive web page should look good on
+large desktop screens and on small mobile phones -->
+
+        <div class="hello">
+            <h1>Hello World !</h1>
+        </div>
+
+        <div class="root">
+
+            <div class="menu">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+            </div>
+
+            <div class="main">
+                <h2>Lorum Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                   sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                   magna aliquam erat volutpat.</p>
+            </div>
+            <div class="right">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+        </div>
+
+        <div class="copyright">© copyright w3schools.com</div>
+
+
+    </body>
+</html>

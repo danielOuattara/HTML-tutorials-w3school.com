@@ -1,0 +1,141 @@
+<!---------------------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+16 03 2020
+HTML Tutorial from: https://www.w3schools.com/html/
+ ---------------------------------------------------->
+
+ <!DOCTYPE html>
+ <html lang="en" dir="ltr">
+     <head>
+         <meta charset="utf-8">
+         <title>HTML id atribute</title>
+         <style>
+             #head3_1 {
+                 background-color: lightsteelblue;
+                 padding: 50px;
+                 text-align: center;
+             }
+             #head3_1:hover {
+                 background-color: steelblue;
+             }
+
+             #african_cities {
+                 background-color: forestgreen;
+                 text-align: center;
+                 padding: 50px;
+             }
+
+             #african_cities:hover {
+                 background-color: #191;
+                 color:lightgrey;
+             }
+
+             #african_cities a:link {
+                text-decoration: none;
+                color: white;
+             }
+
+             #african_cities a:visited {
+                text-decoration: none;
+                color: magenta;
+             }
+
+             #african_cities a:hover {
+                 text-decoration: underline;
+             }
+             #african_cities a:active {
+                text-decoration: none;
+             }
+
+             a.cities_link:link {
+                 text-decoration; none;
+             }
+             a.cities_link:active {
+                 text-decoration; underline;
+             }
+
+             .african_cities {
+                 background-color: grey;
+                 padding: 30px;
+                 color: lightgrey;
+             }
+
+             .african_cities:hover{
+                 background-color: darkgrey;
+                 color: white;
+             }
+         </style>
+     </head>
+     <body>
+         <h1>HTML id attribute</h1>
+
+<!-- Using the id atribute:
+============================
+
+> The 'id' attribute specifies a unique 'id' for an HTML element (the value must
+be unique within the HTML document).
+
+> The 'id' value can be used by 'CSS' and 'JavaScript' to perform certain tasks
+for the element with the specific id value.
+
+In CSS, to select an element with a specific id, write a hash (#) character,
+followed by the id of the element:                                           -->
+
+
+         <h3 id="head3_1">Heading handle by CSS via id attribute</h3><br/>
+<!--
+  > Tip: The 'id' attribute can be used on any HTML element.
+  > Note: The 'id' value is case-sensitive and must contain at least one
+          character, and must not contain whitespace (spaces, tabs, etc.).
+
+
+  Difference Between Class and ID
+ =================================
+
+ > an 'id' attribute belongs to an unique single element,
+ > a 'class' name can be used by multiple elements:                          -->
+
+          <h2 id="african_cities">
+              <a class="cities_link" href="https://en.wikipedia.org/wiki/Lists_of_cities_in_Africa"
+                 target="_blank">African Capital Towns.</a>
+          </h2>
+
+          <h3 class="african_cities">Douala</h3>
+          <p>Douala is the econimical capital of Cameroun.
+              <a  class="cities_link" href="https://en.wikipedia.org/wiki/Douala"
+              target="_blank">Visit Douala.</a>
+          </p>
+
+          <h3 class="african_cities">Bamako</h3>
+          <p>Bamako is the the capital of Mali.
+              <a class="cities_link" href="https://en.wikipedia.org/wiki/Bamako"
+              target="_blank">Visit Bamako.</a>
+          </p>
+
+          <h3 class="african_cities">Casablanca</h3>
+          <p>Casablanca is a  city in Marrocco.
+              <a class="cities_link" href="https://en.wikipedia.org/wiki/Casablanca"
+              target="_blank">Visit Casablanca.</a>
+          </p>
+
+<!--Bookmarks with ID and Links **
+   ================================   -->
+
+
+<!-- Using The id Attribute in JavaScript
+   ======================================
+
+   > JavaScript can access an element with a specified id
+     by using the getElementById() method:-->
+
+         <p id="demo1">Hello World !</p>
+         <button onclick="changeText()">click here</button>
+         <script>
+              function changeText() {
+                  document.getElementById("demo1").innerHTML =
+                    "Hello world ! Have a nice day";
+              }
+          </script>
+
+     </body>
+ </html>

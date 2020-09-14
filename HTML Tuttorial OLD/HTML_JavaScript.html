@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML JavaScript</title>
+  </head>
+  <body>
+
+
+    <h2> HTML JavaScript</h2>
+    <p>JavaScript makes HTML pages more dynamic and interactive</p>
+
+
+    <p><u>exemple 1</u>: JavaScript can give date and time by clicking</p>
+    <button type="button" onclick="document.getElementById('case1.1').innerHTML= Date()">Click To Get Date & Time</button>
+    <p id="case1.1"></p> <!--affichage direct en cliquant -->
+
+    <button type="button" onclick="fonctionAfficheDateHeure()">Click to get Date & Time</button>
+    <p id="case1.2"></p> <!--affichage par appel d'une fonction en cliquant -->
+    <script type="text/javascript">
+      function fonctionAfficheDateHeure()  {
+        document.getElementById("case1.2").innerHTML=Date();
+      }
+    </script><hr>
+
+<!----------------------------------------------------------------------------->
+
+    <p id="case1.3"></p> <!--affichage automatique -->
+    <script>
+    document.getElementById("case1.3").innerHTML=Date()
+    </script>
+    <hr>
+<!----------------------------------------------------------------------------->
+
+    <p><u>exemple 2</u>: JavaScript allows salutation by clicking</p>
+    <p>
+      <button type="button" onclick="document.getElementById('case2').innerHTML='Hello World !' ">Show</button>
+      <button type="button" onclick="document.getElementById('case2').innerHTML='' ">Hide</button>
+    </p>
+
+    <p id="case2"></p><!--affichage "direct" en cliquant -->
+
+    <p>JavaScript allows to hide salutation also by clicking</p><hr>
+    <!--désaffichage "direct" en cliquant -->
+
+
+<!----------------------------------------------------------------------------->
+
+    <p><u>exemple 3</u>: JavaScriptallows to add text</p>
+    <p id="case3"></p><hr>
+    <script type="text/javascript">
+      document.getElementById("case3").innerHTML = "Hello JavaScript !"
+    </script>
+
+    <p><u>exemple 4</u>: Changing HTML content</p>
+    <p id="case4.1">This is a first text</p> <!--affichage par appel d'une fonction en cliquant -->
+    <button type="button" onclick="changingSentence()">Click Here</button>
+    <script type="text/javascript">
+      function changingSentence() {
+      document.getElementById("case4.1").innerHTML = "This first sentence changes to : Hello JavaScript!"
+    }
+    </script>
+    <p id="case4.2"> THis is a second text.</p>
+    <button type="button" name="button" onclick="document.getElementById('case4.2').innerHTML=
+    'This second sentence changes to : Hello Again !'">Click Here</button><hr>
+
+    <p><u>exemple 5</u>: Changing HTML content</p>
+
+    <p id="case5.1"> JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="document.getElementById('case5.1').style.fontSize ='25px';
+     document.getElementById('case5.1').style.color ='red';
+     document.getElementById('case5.1').style.backgroundColor = 'yellow'"> Click</button>
+
+    <p id="case5.2"> JavaScript can change the style of an HTML element easily !</p>
+    <button type="button" onclick="stylingFunction()">Cick</button>
+
+   <script type="text/javascript">
+     function stylingFunction() {
+      document.getElementById("case5.2").style.fontSize="15px";
+      document.getElementById("case5.2").style.color ="red";
+      document.getElementById("case5.2").style.backgroundColor = "yellow";
+     }
+   </script><hr>
+
+       <p><u>exemple 6</u>: Changing HTML attributes</p>
+
+   <img id="monImage" src="monkey0.jpeg" alt="monkey smilling" style=" height:180; width:180" >
+   <p>
+     <button type="button" onclick="show(0)"> angry monkey</button>
+     <button type="button" onclick="show(1)"> scary monkey</button>
+   </p>
+
+ <script type="text/javascript">
+     function show(on) {
+       var pic;
+       if (on == 0) {
+         pic = "monkey0.jpeg"
+       } else {
+         pic = "monkey2.jpeg"
+       }
+       document.getElementById("monImage").src =pic;
+     }
+   </script><hr>
+
+  </body>
+</html>

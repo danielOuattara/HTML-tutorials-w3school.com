@@ -1,0 +1,241 @@
+<!--.---------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+10 08 2020
+HTML Tutorial Multimedia
+https://www.w3schools.com/html/
+------------------------------------------->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+      <title>HTML Video</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>HTML Video.</h1><hr/>
+
+
+<!-- Only MP4, WebM, and Ogg video are supported by the HTML standard. 
+The HTML <video> element is used to show a video on a web page.--> 
+        
+    
+<!-- HTML Video Tags
+=====================
+
+Tag 	  Description
+-----------------------------------------------------
+<video>   Defines a video or movie
+-----------------------------------------------------
+<source>  Defines multiple media resources for media 
+          elements, such as <video> and <audio>
+-----------------------------------------------------
+<track>   Defines text tracks in media players 
+---------------------------------------------------->
+
+
+<!-- The HTML <video> Element
+==============================
+To show a video in HTML, use the <video> element: -->
+
+        <video style="width: 300px; height: 200px" controls src="./../../images/mov_bbb.mp4" >
+            Your browser does not support HTML video.
+        </video>
+
+        <video width="400" controls >
+            <source src="./../../images/mov_bbb.mp4" type="video/mp4"/>
+            <source src="./../../images/mov_bbb.ogg" type="video/mp4"/>
+            Your browser does not support HTML video.
+        </video>
+
+
+        <video width="400" controls style="width: 400px; height: 350px; margin-bottom: 50px" >
+            <source src="./../../images/leaopard.mp4" type="video/mp4"/>
+            <source src="./../../images/leaopard.ogg" type="video/ogg"/>
+            Your browser does not support HTML video.
+        </video><hr/>
+
+
+<!-- How it Works
+=================
+
+The 'controls' attribute adds video controls, like play, pause, and volume.
+
+It is a good idea to always include 'width' and 'height' attributes.
+If height and width are not set, the page might flicker while the video loads.
+
+The <source> element allows you to specify alternative video files which 
+the browser may choose from. The browser will use the first recognized format.
+
+The text between the <video> and </video> tags will only be displayed in 
+browsers that do not support the <video> element.
+
+Note: The 'autoplay' attribute does not work 
+----  in mobile devices like iPad and iPhone. -->
+
+
+    
+<!--Optional Attributes for <video>
+===================================
+
+Attribute  Value 	 Description
+--------------------------------------------------------------------------
+autoplay   autoplay  Specifies that the video will start playing 
+                     as soon as it is ready
+--------------------------------------------------------------------------
+controls   controls  Specifies that video controls should be displayed 
+                     (such as a play/pause button etc).
+--------------------------------------------------------------------------
+height 	   pixels 	 Sets the height of the video player
+--------------------------------------------------------------------------
+loop 	   loop 	 Specifies that the video will start over again, 
+                     every time it is finished
+--------------------------------------------------------------------------
+muted 	   muted 	 Specifies that the audio output of the video should
+                     be muted
+--------------------------------------------------------------------------
+poster 	   URL 	     Specifies an image to be shown while the video is 
+                     downloading, or until the user hits the play button
+--------------------------------------------------------------------------
+preload    auto      Specifies if and how the author thinks the video 
+           metadata  should be loaded when the page loads
+           none 	
+--------------------------------------------------------------------------
+src 	   URL 	     Specifies the URL of the video file
+--------------------------------------------------------------------------
+width 	   pixels 	 Sets the width of the video player 
+------------------------------------------------------------------------->
+
+
+
+<!-- Attributes for <sources>
+==============================
+
+Attribute  Value 	    Description
+------------------------------------------------------------------------------
+media 	   media_query 	Accepts any valid media query that would 
+                        normally be defined in a CSS
+------------------------------------------------------------------------------
+sizes 	  	"           Specifies image sizes for different page layouts
+------------------------------------------------------------------------------
+src 	   URL 	        Required when <source> is used in <audio> and <video>. 
+                        Specifies the URL of the media file
+------------------------------------------------------------------------------
+srcset 	   URL 	        Required when <source> is used in <picture>. 
+                        Specifies the URL of the image to use in 
+                        different situations
+------------------------------------------------------------------------------
+type 	   MIME-type 	Specifies the MIME-type of the resource 
+----------------------------------------------------------------------------->
+
+
+<!-- Attributes for <track>
+============================
+
+------------------------------------------------------------------------
+Attribute 	Value 	       Description
+------------------------------------------------------------------------
+default 	default 	   Specifies that the track is to be enabled if 
+                           the user's preferences do not indicate that 
+                           another track would be more appropriate
+------------------------------------------------------------------------
+kind 	    captions       Specifies the kind of text track
+            chapters
+            descriptions
+            metadata
+            subtitles 	
+------------------------------------------------------------------------
+label 	    text           Specifies the title of the text track
+------------------------------------------------------------------------
+src 	    URL	           Required. Specifies the URL of the track file
+------------------------------------------------------------------------
+srclang 	language_code  Specifies the language of the track text data 
+                           (required if kind="subtitles") 
+------------------------------------------------------------------------>
+
+
+<!-- Browser Support
+=====================
+
+The numbers in the table specify the first browser version that 
+fully supports the <video> element.
+
+------------------------------------------------
+            Chrome  Edge  FireFox  Safari  Opera
+------------------------------------------------ 					
+<video> 	4.0 	9.0   3.5 	   4.0 	   10.5
+ ---------------------------------------------->
+
+
+<!-- HTML Video Formats
+=========================
+
+There are three supported video formats: MP4, WebM, and Ogg. 
+
+The browser support for the different formats is:
+-----------------------------------------
+Browser 	        MP4    WebM 	Ogg
+-----------------------------------------
+Internet Explorer 	YES     NO 	    NO
+-----------------------------------------
+Chrome 	            YES 	YES 	YES
+-----------------------------------------
+Firefox 	        YES 	YES 	YES
+-----------------------------------------
+Safari 	            YES 	NO 	    NO
+-----------------------------------------
+Opera 	            YES  	YES 	YES 
+----------------------------------------->
+
+
+<!-- HTML Video - Media Types
+=============================
+
+File Format 	Media Type
+-----------------------------
+MP4 	        video/mp4
+-----------------------------
+WebM 	        video/webm
+-----------------------------
+Ogg 	        video/ogg 
+----------------------------> 
+
+
+<!-- HTML Video - Methods, Properties, and Events
+==================================================
+
+HTML defines 'DOM methods', 'properties', and 'events' for the <video> element.
+This allows you to load, play, and pause videos, as well as setting duration and volume.
+There are also DOM events that can notify you when a video begins to play, is paused, etc. -->
+
+        <div style="text-align: center;">
+            <button onclick="playPause()">Play/Pause</button>
+            <button onclick="makeLarge()">Larger</button>
+            <button onclick="makeNormal()">Normal</button> 
+            <button onclick="makeSmall()">Smaller</button> <br/><br/>
+
+            <video id="video1" width="420">
+                <source src="./../../images/scenes-of-nature.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+
+        <script>
+            let myVideo = document.getElementById("video1");
+/*
+            function playPause() {
+                if (myVideo.paused) {
+                    myVideo.play();
+                }
+                else {
+                    myVideo.pause();
+                }
+            }
+*/
+             playPause = () => (myVideo.paused) ? myVideo.play() : myVideo.pause(); 
+             makeLarge = () => myVideo.width = 620;
+             makeNormal = () => myVideo.width = 420;
+             makeSmall = () => myVideo.width = 320;
+        </script>
+
+</body>
+</html>
