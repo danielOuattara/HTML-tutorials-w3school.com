@@ -18,10 +18,10 @@ https:/www.w3schools.com/js/
 
 <!-- This chapter describes the different types for the HTML <input> element.
 
-HTML Input Types
-=================
+HTML Input type attribute
+==========================
 
-Here are the different input types you can use in HTML:
+Here are the different input "type" you can use in HTML:
 
     <input type="button">
     <input type="checkbox">
@@ -46,9 +46,9 @@ Here are the different input types you can use in HTML:
     <input type="url">
     <input type="week">
 
-Input Restrictions
 
-====================
+Input Restrictions attributes
+==============================
 Here is a list of some common input restrictions:
 
 Attribute 	 Description
@@ -70,30 +70,29 @@ You will learn more about input restrictions in the next chapter.            -->
 
 
       <form action="index.html" method="post">
-
         <input type="text"/> text<br/><br/>
-        <input type="button"/>button<br/><br/>
-        <input type="checkbox"/>checkbox<br/><br/>
-        <input type="color"/>color<br/><br/>
-        <input type="date"/>date<br/><br/>
-        <input type="datetime-local"/>date-local<br/><br/>
-        <input type="email"/>email<br/><br/>
-        <input type="file"/>file<br/><br/>
-        <input type="hidden"/>hidden<br/><br/>
-        <input type="image"/>image<br/><br/>
-        <input type="month"/>month<br/><br/>
-        <input type="number"/>number<br/><br/>
-        <input type="password"/>password<br/><br/>
-        <input type="radio"/>radio<br/><br/>
-        <input type="range"/>range<br/><br/>
-        <input type="reset"/>reset<br/><br/>
+        <input type="button"/> button<br/><br/>
+        <input type="checkbox"/> checkbox<br/><br/>
+        <input type="color"/> color<br/><br/>
+        <input type="date"/> date<br/><br/>
+        <input type="datetime-local"/> date-local<br/><br/>
+        <input type="email"/> email<br/><br/>
+        <input type="file"/> file<br/><br/>
+        <input type="hidden"/> hidden<br/><br/>
+        <input type="image"/> image<br/><br/>
+        <input type="month"/> month<br/><br/>
+        <input type="number"/> number<br/><br/>
+        <input type="password"/> password<br/><br/>
+        <input type="radio"/> radio<br/><br/>
+        <input type="range"/> range<br/><br/>
+        <input type="reset"/> reset<br/><br/>
         <input type="search"/>search<br/><br/>
-        <input type="submit"/>submit<br/><br/>
-        <input type="tel"/>tel<br/><br/>
-        <input type="text"/>text<br/><br/>
-        <input type="time"/>time<br/><br/>
-        <input type="url"/>url<br/><br/>
-        <input type="week"/>week<br/><br/>
+        <input type="submit"/> submit<br/><br/>
+        <input type="tel"/> tel<br/><br/>
+        <input type="text"/> text<br/><br/>
+        <input type="time"/> time<br/><br/>
+        <input type="url"/> url<br/><br/>
+        <input type="week"/> week<br/><br/>
       </form>
 
       <hr/><br/>
@@ -109,17 +108,15 @@ You will learn more about input restrictions in the next chapter.            -->
         <form action="/action.php">
 
           <label for="fname">First Name:</label><br/>
-          <input type="text" id="fname" name="fname"
-                 placeholder="First Name..."><br/><br/>
+          <input type="text" id="fname" name="fname" placeholder="First Name..."><br/><br/>
 
           <label for="lname">Last Name:</label><br/>
-          <input type="text" id="lname" name="lname"
-                 placeholder="Last Name..."/>
+          <input type="text" id="lname" name="lname" placeholder="Last Name..."/>
 
         </form><br/><hr/>
 
-<!-- Note that the form itself is not visible.
-Also note that the default width of a text field is 20 characters.
+<!-- Note that the form itself is not visible. Also note that the default width of a text field 
+is 20 characters.
 
 
 Input Type Password
@@ -179,16 +176,14 @@ their default values:                                                        -->
         <form action="/action_page.php" method="post">
 
           <label for="fname">Fist Name:</label><br/>
-          <input type="text" id="fname" name="fname"
-                 placeholder="first name..."/><br/><br/>
+          <input type="text" id="fname" name="fname" placeholder="first name..."/><br/><br/>
 
           <label for="lname">Last Name:</label><br/>
-          <input type="text" id="lname" name="lname"
-                 placeholder="last name..."/><br/><br/>
-
-          <input type="submit" value="Submit"/>
+          <input type="text" id="lname" name="lname" placeholder="last name..."/><br/><br/>
 
           <input type="reset" value="Click to reset"/>
+          <input type="submit" value="Submit"/>
+
 
         </form><br/><hr/>
 
@@ -203,7 +198,7 @@ Radio buttons let a user select ONLY ONE of a limited number of choices: -->
 
         <form  action="index.html" method="post">
 
-          <input type="radio"  id="male" name="gender" value="male"/>
+          <input type="radio" id="male" name="gender" value="male"/>
           <label for="male">Male</label><br/>
 
           <input type="radio"  id="female" name="gender" value="female"/>
@@ -221,21 +216,22 @@ Checkboxes let a user select ZERO + options of a limited number of choices. -->
         <h2>Input Type Checkbox</h2>
 
         <form>
+          <fieldset>
+            <legend>Check correct boxes</legend>
+            <input type="checkbox" id="vehicule1" name="vehicule1" value="bike"/>
+            <label for="vehcule1">I have a bike</label><br/>
 
-          <input type="checkbox" id="vehicule1" name="vehicule1" value="Bike"/>
-          <label for="vehcule1">I have a bike</label><br/>
+            <input type="checkbox" id="vehcule2" name="vehcule2" value="car"/>
+            <label for="vehcule2"> I have a car</label><br/>
 
-          <input type="checkbox" id="vehcule2" name="vehcule2" value="Car"/>
-          <label for="vehcule2"> I have a car</label><br/>
+            <input type="checkbox" id="vehcule3" name="vehicule3" value="boat">
+            <label for="vehicule3">I have a boat</label><br/>
 
-          <input type="checkbox" id="vehcule3" name="vehicule3" value="Boat">
-          <label for="vehicule3">I have a boat</label><br/>
+            <input type="checkbox" id="vehicule4" name="vehicule4" value="Airplane"/>
+            <label for="vehicule4">I have an airplane</label><br/><br/>
 
-          <input type="checkbox" id="vehicule4" name="vehicule4"
-                 value="Airplane"/>
-          <label for="vehicule4">I have an airplane</label><br/>
-
-          <input type="submit" value="Click to Submit"/>
+            <input type="submit" value="Click to Submit"/>
+          </fieldset>
 
         </form><br/><hr/>
 
@@ -247,8 +243,7 @@ Checkboxes let a user select ZERO + options of a limited number of choices. -->
 
         <h2>Input Type Button</h2>
 
-        <input type="button" onclick="alert('Hello World Again !')"
-               value="Click to Alert()"><br/><hr/>
+        <input type="button" onclick="alert('Hello World Again !')" value="Click to Alert()"><br/><hr/>
 
 
 <!-- Input Type Color
@@ -262,13 +257,13 @@ Depending on browser support, a color picker can show up in the input field. -->
         <form>
 
           <label for="favcolor">Select your favorite color:</label>
-          <input type="color" id="favcolor" name="favcolor"/>
+          <input type="color" id="favcolor" name="favcolor"/><br><br>
 
           <input type="submit" value="Sumbit Color"/>
         </form><br/><hr/>
 
 
-<!-- Input TYpe Date
+<!-- Input Type Date
 ====================
 
 The <input type="date"> is used for input fields that should contain a date.
@@ -280,7 +275,7 @@ You can also use the 'min' and 'max' attributes to add restrictions to dates -->
         <form>
 
           <label for="birthday">Birthday:</label>
-          <input type="date" id="Birthday" name="birthday">
+          <input type="date" id="birthday" name="birthday">
 
           <input type="submit" value="Submit">
 
@@ -352,7 +347,7 @@ for file uploads.                                                            -->
         <form>
 
           <label for="myfile">Select a file:</label>
-          <input type="file"  id="myfile" name="myfile"/><br/><br/>
+          <input type="file" id="myfile" name="myfile"/><br/><br/>
 
           <input type="submit" value="Submit Selected File"/>
 
@@ -390,10 +385,13 @@ value from 1 to 5: -->
         <form>
 
           <label for="quantity">Quantity (between 1 and 5):</label>
-          <input type="number" id="quantity" min="1" max="5"/>
+          <input type="number" id="quantity_1"/>
+        </form><br/>
 
-          <input type="submit" value="Submit Quantity"/>
+        <form>
 
+          <label for="quantity">Quantity (between 1 and 5):</label>
+          <input type="number" id="quantity_1" min="1" max="5"/>
         </form><br/>
 
 
@@ -404,8 +402,7 @@ a value from 0 to 100, in steps of 10. The default value is 30:              -->
         <form>
 
           <label for="quantity">Quantity:</label>
-          <input type="number" id="quantity" name="quantity"
-                 min="0" max="100" step="10" value="0"/>
+          <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value=""/>
 
         </form><br/><hr/>
 
@@ -460,8 +457,7 @@ The <input type="tel"> is used for input fields that should contain a telephone
         <form>
 
           <label for="phone">Enter your phone number:</label>
-          <input type="tel" id="phone" name="phone"
-                 pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"/>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"/>
 
           <input type="submit" value="Submit"/>
 

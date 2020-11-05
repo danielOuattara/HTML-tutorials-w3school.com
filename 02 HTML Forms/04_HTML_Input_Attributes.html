@@ -14,32 +14,29 @@ https://www.w3schools.com/js/
 
         <h1>HTML Input Attributes.</h1>
 
-<!-- This chapter describes the different attributes for the HTML
-<input> element.
+<!-- This chapter describes the different attributes for the HTML <input> element.
 
 
-The value Attribute
+The "value" Attribute
 ====================
 
-The input 'value' attribute specifies an initial value for an input field:   -->
+The input "value" attribute specifies an initial value for an input field:   -->
 
         <h2>"value" attribute</h2>
 
         <form >
-
           <label for="fname">First name:</label><br/>
           <input type="text" id="fname"  name="fname" value="John"/><br/>
 
           <label for="lname">Last Name:</label><br/>
           <input type="text" id="lname" name="lname" value="Doe"/>
-
         </form><br/><hr/><br/>
 
 
-<!--The readonly Attribute
+<!--The "readonly" Attribute
 ============================
 
-The input 'readonly' attribute specifies that an input field is read-only.
+The input "readonly" attribute specifies that an input field is read-only.
 
 A read-only input field cannot be modified (however, a user can tab to it,
 highlight it, and copy the text from it).
@@ -50,8 +47,7 @@ The value of a read-only input field will be sent when submitting the form ! -->
         <form>
 
           <label for="fname">First name:</label><br/>
-          <input type="text" id="fname" name="fname" value="John"
-                 readonly ="readonly"/><br/>
+          <input type="text" id="fname" name="fname" value="John" readonly ="readonly"/><br/>
 
           <label for="lname">Last name:</label><br/>
           <input type="text" id="lname" name="lname" value="Doe"/>
@@ -59,15 +55,14 @@ The value of a read-only input field will be sent when submitting the form ! -->
         </form><br/><hr/><br/>
 
 
-<!-- The disabled Attribute
+<!-- The "disabled" Attribute
 ============================
 
-The input 'disabled' attribute specifies that an input field should
-be disabled.
+The input "disabled" attribute specifies that an input field should be disabled.
 
 A disabled input field is unusable and un-clickable.
 
-The value of a 'disabled' input field will not be sent when submitting
+The value of a "disabled" input field will not be sent when submitting
 the form !                                                                   -->
 
         <h2>"disabled" attribute</h2>
@@ -75,8 +70,7 @@ the form !                                                                   -->
         <form>
 
          <label for="fname">First name:</label><br/>
-         <input type="text" id="fname" name="fname" value="John"
-                disabled="disabled"/><br/>
+         <input type="text" id="fname" name="fname" value="John" disabled/><br/>
 
          <label for="lname">Last name:</label><br/>
          <input type="text" id="lname" name="lname" value="Doe"/>
@@ -84,16 +78,16 @@ the form !                                                                   -->
        </form><br/><hr/><br/>
 
 
-<!-- The size Attribute
+<!-- The "size" Attribute
 ========================
 
-The input 'size' attribute specifies the visible width, in characters,
-of an 'input field'.
+The input "size" attribute specifies the visible width, in characters,
+of an "input field".
 
 The default value for size is 20.
 
 Note: The size attribute works with the following input types:
-      'text', 'search', 'tel', 'url', 'email', and 'password'.               -->
+      "text", "search", "tel", "url", "email", and "password".               -->
 
        <h2>"size" attribute</h2>
 
@@ -103,18 +97,18 @@ Note: The size attribute works with the following input types:
          <input type="text" id="fname" name="fname" size="50"><br/>
 
          <label for="pin">PIN:</label><br/>
-         <input type="text" id="pin" name="pin" size="4"/>
+         <input type="text" id="pin" name="pin" size="3"/>
 
        </form><br/><hr/><br/>
 
 
-<!-- The maxlength Attribute
+<!-- The "maxlength" Attribute
 ==============================
 
-The input 'maxlength' attribute specifies the maximum number of characters
+The input "maxlength" attribute specifies the maximum number of characters
 allowed in an input field.
 
-Note: When a 'maxlength' is set, the input field will not accept more than
+Note: When a "maxlength" is set, the input field will not accept more than
 ----  the specified number of characters. However, this attribute does
       not provide any feedback. So, if you want to alert the user,
       you must write JavaScript code.                                       -->
@@ -132,16 +126,16 @@ Note: When a 'maxlength' is set, the input field will not accept more than
       </form><br/><hr/><br/>
 
 
-<!-- The min and max Attributes
+<!-- The "min" and "max" Attributes
 ================================
 
-The input 'min' and 'max' attributes specify the minimum and maximum values
+The input "min" and "max" attributes specify the minimum and maximum values
 for an input field.
 
-The 'min' and 'max' attributes work with the following input types:
-'number', 'range', 'date', 'datetime-local', 'month', 'time' and 'week'.
+The "min" and "max" attributes work with the following input types:
+"number", "range", "date", "datetime-local", "month", "time" and "week".
 
-Tip: Use the 'max' and 'min' attributes together to create a range of
+Tip: Use the "max" and "min" attributes together to create a range of
 legal values.                                                                -->
 
 
@@ -164,14 +158,14 @@ legal values.                                                                -->
 
 
 
-<!-- The multiple Attribute
+<!-- The "multiple" Attribute
 ===========================
 
-The input 'multiple' attribute specifies that the user is allowed to enter
+The input "multiple" attribute specifies that the user is allowed to enter
 more than one value in an input field.
 
-The 'multiple' attribute works with the following input types:
- 'email', and 'file'.                                                        -->
+The "multiple" attribute works with the following input types:
+ "email", and "file".                                                        -->
 
         <h2>"multiple" attribute</h2>
         <form>
@@ -181,14 +175,14 @@ The 'multiple' attribute works with the following input types:
         </form><br/><hr/><br/>
 
 
-<!-- The pattern Attribute
+<!-- The "pattern" Attribute
 ===========================
 
-The input 'pattern' attribute specifies a 'regular expression' that the 'input'
+The input "pattern" attribute specifies a "regular expression" that the "input"
 field's value is checked against, when the form is submitted.
 
-The 'pattern' attribute works with the following input types:
- 'text', 'date', 'search', 'url', 'tel', 'email', and 'password'.
+The "pattern" attribute works with the following input types:
+ "text", "date", "search", "url", "tel", "email", and "password".
 
 
 Tip: Use the global title attribute to describe the pattern to help the user.
@@ -200,23 +194,22 @@ Tip: Learn more about regular expressions in our JavaScript tutorial.
 
           <form>
 
-            <label for="country_code">Country Code:</label>
-            <input type="text" id="country_code" name="contry_code"
-                   pattern="[A-Z a-z]{3}" title="Three letter country code"/>
+            <label for="country_code">Country Code <abbr title="respect format:  [A-Z a-z]*3">[?]</abbr>:</label>
+            <input type="text" id="country_code" name="contry_code" pattern="[A-Z a-z]{3}" title="Three letter country code" placeholder="XXX"/>
 
           </form><br/><hr/><br/>
 
 
-<!-- The placeholder Attribute
+<!-- The "placeholder" Attribute
 ==============================
-The input 'placeholder' attribute specifies a short hint that describes
+The input "placeholder" attribute specifies a short hint that describes
 the expected value of an input field (a sample value or a short description
 of the expected format).
 
 The short hint is displayed in the input field before the user enters a value.
 
-The 'placeholder' attribute works with the following input types:
-'text', 'search', 'url', 'tel', 'email', and 'password'.                     -->
+The "placeholder" attribute works with the following input types:
+"text", "search", "url", "tel", "email", and "password".                     -->
 
 
         <form>
@@ -228,15 +221,15 @@ The 'placeholder' attribute works with the following input types:
         </form><br/><hr/><br/>
 
 
-<!-- The required Attribute
+<!-- The "required" Attribute
 ============================
 
-The input 'required' attribute specifies that an input field must be
+The input "required" attribute specifies that an input field must be
 filled out before submitting the form.
 
-The 'required' attribute works with the following input types:
-'text', 'search', 'url', 'tel', 'email', 'password', 'date pickers', 'number',
-'checkbox', 'radio', and 'file'.                                             -->
+The "required" attribute works with the following input types:
+"text", "search", "url", "tel", "email", "password", "date pickers", "number",
+"checkbox", "radio", and "file".                                             -->
 
 
 
@@ -249,19 +242,18 @@ The 'required' attribute works with the following input types:
        </form><br/><hr/><br/>
 
 
-<!-- The step Attribute
+<!-- The "step" Attribute
 ========================
 
-The input 'step' attribute specifies the legal number intervals for an
-input field.
+The input "step" attribute specifies the legal number intervals for an input field.
 
 If step="3", legal numbers could be -3, 0, 3, 6, etc.
 
-Tip: 'step' attribute can be used together with the 'max' and 'min'
+Tip: "step" attribute can be used together with the "max" and "min"
 attributes to create a range of legal values.
 
-The 'step' attribute works with the following input types:
-'number', 'range', 'date', 'datetime-local', 'month', 'time' and 'week'.    -->
+The "step" attribute works with the following input types:
+"number", "range", "date", "datetime-local", "month", "time" and "week".    -->
 
 
         <h2>"step" attribute</h2>
@@ -269,8 +261,7 @@ The 'step' attribute works with the following input types:
         <form>
 
           <label for="points">Points:</label>
-          <input type="number" id="points" name="points"
-                 min="0" max="12" step="3">
+          <input type="number" id="points" name="points" min="0" max="12" step="3">
 
         </form><br/><hr/><br/>
 
@@ -280,11 +271,11 @@ The 'step' attribute works with the following input types:
 
 
 
-The autofocus Attribute
+The "autofocus" Attribute
 ========================
 
-The input autofocus attribute specifies that an input field should
-automatically get focus when the page loads.                                -->
+The input "autofocus" attribute specifies that an input field should automatically get 
+focus when the page loads.                                -->
 
         <h2>"autofocus" attribute</h2>
 
@@ -299,10 +290,10 @@ automatically get focus when the page loads.                                -->
         </form><br/><hr/><br/>
 
 
-<!-- The height and width Attributes
+<!-- The "height" and "width" Attributes
 =====================================
 
-The input 'height' and 'width' attributes specify the height and width
+The input "height" and "width" attributes specify the height and width
 of an <input type="image"> element.
 
 Tip: Always specify both the height and width attributes for images.
@@ -332,8 +323,8 @@ Tip: Always specify both the height and width attributes for images.
 <!-- The list Attribute
 =========================
 
-The input 'list' attribute refers to a '<datalist>' element that
-contains pre-defined options for an '<input>' element.                       -->
+The input "list" attribute refers to a "<datalist>" element that
+contains pre-defined options for an "<input>" element.                       -->
 
         <h2>"list" attribute</h2>
 
@@ -357,17 +348,17 @@ contains pre-defined options for an '<input>' element.                       -->
 <!-- The autocomplete Attribute
 ================================
 
-The input 'autocomplete' attribute specifies whether a form or an input
-field should have 'autocomplete' 'on' or 'off'.
+The input "autocomplete" attribute specifies whether a form or an input
+field should have "autocomplete" "on" or "off".
 
 Autocomplete allows the browser to predict the value. When a user starts
 to type in a field, the browser should display options to fill in the
 field, based on earlier typed values.
 
-The 'autocomplete' attribute works with <form> and the following <input>
+The "autocomplete" attribute works with <form> and the following <input>
 types:
-       'text', 'search', 'url', 'tel', 'email', 'password', 'datepickers',
-       'range', and 'color'.                                               -->
+       "text", "search", "url", "tel", "email", "password", "datepickers",
+       "range", and "color".                                               -->
 
         <h2>"autocomplete" attribute</h2>
 
@@ -386,7 +377,7 @@ types:
         </form>
 
 <!-- Tip: In some browsers you may need to activate an autocomplete
-function for this to work (Look under "Preferences" in the browser's menu).  -->
+function for this to work (Look under "Preferences" in the browser"s menu).  -->
 
     </body>
 </html>

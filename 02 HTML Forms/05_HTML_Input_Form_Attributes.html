@@ -20,33 +20,38 @@ https://www.w3schools.com/js/
 The form Attribute
 ===================
 
-The input 'form' attribute specifies the form type the <input> element
-belongs to.
+The "form" attribute in an <input> element specifies the <form> element type that <input> belongs to.
 
 The value of this attribute must be equal to the 'id' attribute of the
-<form> element it belongs to.                                                -->
+<form> element it belongs to.                                             
+  
+example: An input field located outside of the HTML form (but still a part of the form1)-->
+
+    <h2>"form" attribute</h2>
+  <form action="/action_page.php" id="form1">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <input type="submit" value="Submit"><br/><br/>
+  </form>
+  
+  <label for="lname">Last name:</label> 
+  <input type="text" id="lname" name="lname" form="form1"><br/><br/><hr/>
 
 
-        <form action="/action.php" id="form1">
+<!--The "formaction" Attribute
+===============================
 
-          <label for="fname">First Name:</label>
-          <input type="text" id="fname" name="fname"><br/><br/>
+The "formaction" attribute in an <input> element specifies the URL of the file that will process the <input>
+when the form is submitted.
 
-          <input type="submit" value="Submit">
+Note: This attribute overrides the "action" attribute of the <form> element.
+-----
 
-        </form>
+The "formaction" attribute works with the following input types: "submit" and "image". 
 
-The formaction Attribute
-==========================
+Below is an example fo an HTML form with two submit buttons, with different actions:  -->
 
-The input formaction attribute specifies the URL of the file that will process the input when the form is submitted.
-
-Note: This attribute overrides the action attribute of the <form> element.
-
-The formaction attribute works with the following input types: submit and image.
-Example
-
-An HTML form with two submit buttons, with different actions:
+<h2>"formaction" attribute </h2>
 <form action="/action_page.php">
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"><br><br>
@@ -54,53 +59,61 @@ An HTML form with two submit buttons, with different actions:
   <input type="text" id="lname" name="lname"><br><br>
   <input type="submit" value="Submit">
   <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
-</form>
+</form><hr/>
 
-The formenctype Attribute
-==========================
-The input formenctype attribute specifies how the form-data should be encoded when submitted (only for forms with method="post").
 
-Note: This attribute overrides the enctype attribute of the <form> element.
+<!--The "formenctype" Attribute
+===============================
 
-The formenctype attribute works with the following input types: submit and image.
-Example
+The input "formenctype" attribute specifies how the form-data should be encoded when submitted 
+(only for forms with method="post").
 
-A form with two submit buttons. The first sends the form-data with default encoding, the second sends the form-data encoded as "multipart/form-data":
+Note: This attribute overrides the "enctype" attribute of the <form> element.
+
+The "formenctype" attribute works with the following input types: submit and image. 
+
+A form with two submit buttons. The first sends the form-data with default encoding, the second sends the form-data encoded as "multipart/form-data": -->
+<h2>"formenctype" attribute</h2>
 <form action="/action_page_binary.asp" method="post">
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"><br><br>
   <input type="submit" value="Submit">
   <input type="submit" formenctype="multipart/form-data"
   value="Submit as Multipart/form-data">
-</form>
+</form><hr/>
 
-The formmethod Attribute
-=========================
 
-The input formmethod attribute defines the HTTP method for sending form-data to the action URL.
+<!-- The "formmethod" Attribute
+==============================
 
+The input "formmethod" attribute defines the HTTP method for sending form-data to the action URL.
 Note: This attribute overrides the method attribute of the <form> element.
 
-The formmethod attribute works with the following input types: submit and image.
+The "formmethod" attribute works with the following input types: submit and image.
 
 The form-data can be sent as URL variables (method="get") or as an HTTP post transaction (method="post").
 
 Notes on the "get" method:
+---------------------------
 
-    This method appends the form-data to the URL in name/value pairs
-    This method is useful for form submissions where a user want to bookmark the result
-    There is a limit to how much data you can place in a URL (varies between browsers), therefore, you cannot be sure that all of the form-data will be correctly transferred
-    Never use the "get" method to pass sensitive information! (password or other sensitive information will be visible in the browser's address bar)
+   > This method appends the form-data to the URL in name/value pairs
+   > This method is useful for form submissions where a user want to bookmark the result
+   > There is a limit to how much data you can place in a URL (varies between browsers), 
+     therefore, you cannot be sure that all of the form-data will be correctly transferred
+   > Never use the "get" method to pass sensitive information! (password or other sensitive 
+     information will be visible in the browser's address bar)
 
 Notes on the "post" method:
+----------------------------
 
-    This method sends the form-data as an HTTP post transaction
-    Form submissions with the "post" method cannot be bookmarked
-    The "post" method is more robust and secure than "get", and "post" does not have size limitations
+   > This method sends the form-data as an HTTP post transaction
+   > Form submissions with the "post" method cannot be bookmarked
+   > The "post" method is more robust and secure than "get", and "post" does not have size limitations
 
-Example
 
-A form with two submit buttons. The first sends the form-data with method="get". The second sends the form-data with method="post":
+A form with two submit buttons. The first sends the form-data with method="get". The second sends 
+the form-data with method="post": -->
+<h2>"formmethod" attribute</h2>
 <form action="/action_page.php" method="get">
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"><br><br>
@@ -108,18 +121,21 @@ A form with two submit buttons. The first sends the form-data with method="get".
   <input type="text" id="lname" name="lname"><br><br>
   <input type="submit" value="Submit using GET">
   <input type="submit" formmethod="post" value="Submit using POST">
-</form>
+</form><hr/>
 
-The formtarget Attribute
-=========================
-The input formtarget a attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.
 
-Note: This attribute overrides the target attribute of the <form> element.
+<!-- The "formtarget" Attribute
+================================
 
+The input "formtarget"  attribute specifies a name or a keyword that indicates where to display 
+the response that is received after submitting the form.
+
+Note: This attribute overrides the "target" attribute of the <form> element.
 The formtarget attribute works with the following input types: submit and image.
-Example
+ 
 
-A form with two submit buttons, with different target windows:
+A form with two submit buttons, with different target windows:  -->
+<h2>"formtarget" attribute</h2>
 <form action="/action_page.php">
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"><br><br>
@@ -127,50 +143,45 @@ A form with two submit buttons, with different target windows:
   <input type="text" id="lname" name="lname"><br><br>
   <input type="submit" value="Submit">
   <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
-</form>
+</form><hr/>
 
 
-The formnovalidate Attribute
-==============================
+<!-- The formnovalidate Attribute
+==================================
 
-The input formnovalidate attribute specifies that an <input> element should not be validated when submitted.
+The input "formnovalidate" attribute specifies that an <input> element should not be validated 
+when submitted.
 
 Note: This attribute overrides the novalidate attribute of the <form> element.
-
 The formnovalidate attribute works with the following input types: submit.
-Example
 
-A form with two submit buttons (with and without validation):
+A form with two submit buttons (with and without validation): -->
+<h2>"formnovalidate" attribute</h2>
 <form action="/action_page.php">
   <label for="email">Enter your email:</label>
   <input type="email" id="email" name="email"><br><br>
   <input type="submit" value="Submit">
   <input type="submit" formnovalidate="formnovalidate"
   value="Submit without validation">
-</form>
+</form><hr/>
 
 
-The novalidate Attribute
-=========================
+<!-- The novalidate Attribute
+===============================
 
 The novalidate attribute is a <form> attribute.
 
 When present, novalidate specifies that all of the form-data should not be validated when submitted.
 Example
 
-Specify that no form-data should be validated on submit:
+Specify that no form-data should be validated on submit: -->
+<h2>"novalidate" attribute</h2>
 <form action="/action_page.php" novalidate>
   <label for="email">Enter your email:</label>
   <input type="email" id="email" name="email"><br><br>
   <input type="submit" value="Submit">
 </form>
-HTML Form and Input Elements
-Tag 	Description
-<form> 	Defines an HTML form for user input
-<input> 	Defines an input control
 
-For a complete list of all available HTML tags, visit our HTML Tag Reference.
- -->
 
 
     </body>
