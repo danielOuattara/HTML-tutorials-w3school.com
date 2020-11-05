@@ -8,38 +8,7 @@ HTML Tutorial from: https://www.w3schools.com/html/
      <head>
          <meta charset="utf-8">
          <title>HTML Background Images</title>
-         <style>
-             div.two {
-                 background-image: url('../images/index.jpeg');
-                 background-repeat: no-repeat;
-                 border: 3px solid blue;
-                 margin-bottom: 100px;
-             }
-             div.three {
-                 background-image: url('../images/index.jpeg');
-                 border: 1px solid magenta;
-                 background-size: cover;
-                 background-attachment: scroll;
-                 margin-bottom: 100px;
-             }
 
-             div.four{
-                 background-image: url('../images/index.jpeg');
-                 border: 1px solid yellow;
-                 background-size: cover;
-                 background-attachment: fixed;
-                 margin-bottom: 100px;
-             }
-
-             div.five{
-                 background-image: url('../images/index.jpeg');
-                 border: 1px solid black;
-                 background-size: cover;
-                 background-attachment: fixed;
-                 background-size: 100% 100%;
-                 margin-bottom: 100px;
-             }
-         </style>
      </head>
      
      <body>
@@ -60,6 +29,14 @@ HTML Tutorial from: https://www.w3schools.com/html/
             background image behaves.
          </div>
 
+        <style>
+            div.two {
+                 background-image: url('../images/index.jpeg');
+                 background-repeat: no-repeat;
+                 border: 3px solid blue;
+                 margin-bottom: 100px;
+             }
+        </style>
          <div class="two" >
             You can specify background images<br>
             for any visible HTML element.<br>
@@ -73,6 +50,16 @@ HTML Tutorial from: https://www.w3schools.com/html/
             background image behaves.
         </div>
 
+
+        <style>
+            div.three {
+                 background-image: url('../images/index.jpeg');
+                 border: 1px solid magenta;
+                 background-size: cover;
+                 background-attachment: scroll;
+                 margin-bottom: 100px;
+             }
+        </style>
         <div class="three" >
            You can specify background images<br>
            for any visible HTML element.<br>
@@ -85,7 +72,16 @@ HTML Tutorial from: https://www.w3schools.com/html/
            browser window to see how the<br>
            background image behaves.
          </div>
-
+         
+         <style>
+            div.four{
+                 background-image: url('../images/index.jpeg');
+                 border: 1px solid yellow;
+                 background-size: cover;
+                 background-attachment: fixed;
+                 margin-bottom: 100px;
+             }
+         </style>
         <div class="four" >
            You can specify background images<br>
            for any visible HTML element.<br>
@@ -98,6 +94,17 @@ HTML Tutorial from: https://www.w3schools.com/html/
            browser window to see how the<br>
            background image behaves.
          </div>
+
+         <style>
+            div.five{
+                background-image: url('../images/index.jpeg');
+                border: 1px solid black;
+                background-size: contain;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+                margin-bottom: 100px;
+            }
+        </style>
 
         <div class="five" >
            You can specify background images<br>
